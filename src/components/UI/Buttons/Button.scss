@@ -1,0 +1,17 @@
+@import "../../../variables";
+
+.universal-btn {
+    button {
+        padding: 20px 30px;
+        font-family: $secondary-font-family;
+        border-radius: $border-radius-primary;
+
+        h4 {
+            text-transform: uppercase;
+
+            font-size: 18px;
+            font-weight: 700;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.productDetails-container {
+    padding-top: 200px;
+}
+
+.productDetails-routes {
+    display: flex;
+    color: black;
+    // justify-content: center;
+    padding-left: 30px;
+    text-align: center;
+    align-items: center;
+    gap: 16px;
+    font-family: $base-font-family;
+    position: relative;
+    z-index: 3;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

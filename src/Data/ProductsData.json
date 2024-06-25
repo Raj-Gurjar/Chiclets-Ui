@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Tropical Twist",
+        "category": "Tropical Twist-cat",
+        "description": "Chiclets Tropical Twist Chewing Gum helps you breathe easier. You may keep a pack on hand for a quick burst of freshness or add it to care Packages, gift baskets, goodies bags, and party tastes.",
+        "ingredients": [
+            "Sugar",
+            "Glycerin",
+            "Corn Syrup",
+            "Aspartame",
+            "Gum Base"
+        ],
+        "buy_link": "https://example.com/buy",
+        "product_img": "/assets/Product-transbg/tropical.png",
+        "product_img2": "/../assets/Products/tropical.png",
+        "more_info_link": "https://example.com/info/tropical_twist",
+        "nutrition": {
+            "calories": 6,
+            "total_fat": "0.4g",
+            "sodium": "5mg",
+            "total_carbohydrate": "1.8g",
+            "sugars": "1.6g",
+            "protein": "0g"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Spearmint Flavour",
+        "category": "Spearmint Flavour-cat",
+        "description": "Chiclets Mint Gum with Spearmint Flavour is a delicious way to brighten your day and refresh your breath. The gum's spearmint flavour will make you desire it more and more, and the pack is convenient to take in your desk drawer, vehicle, or backpack.",
+        "ingredients": [
+            "Acesulfame K",
+            "Sugar",
+            "Glycerin",
+            "BHT (to maintain freshness)",
+            "Corn Syrup"
+        ],
+        "buy_link": "https://example.com/buy",
+        "product_img": "/assets/Product-transbg/spearmint.png",
+        "product_img2": "/src/assets/Products/tropical.png",
+        "more_info_link": "https://example.com/info/spearmint_flavour",
+        "nutrition": {
+            "calories": 8,
+            "total_fat": "0.2g",
+            "sodium": "5mg",
+            "total_carbohydrate": "1.4g",
+            "sugars": "1.5g",
+            "protein": "0g"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Mix Fruit Flavour",
+        "category": "Mix Fruit Flavour-cat",
+        "description": "Chiclets Mix Fruit Flavour bursts your palate with a variety of tastes that leave you feeling invigorated. You get a long-lasting burst of freshness from the juicy taste of chiclets blended fruit. You may feel confident and invigorated when on the go with it because of its pocket-friendly size.",
+        "ingredients": [
+            "Colors (Yellow 5, Red 40, Blue 1)",
+            "Glycerin",
+            "BHT (to maintain freshness)",
+            "Sugar",
+            "Gum Base"
+        ],
+        "buy_link": "https://example.com/buy",
+        "product_img": "/assets/Product-transbg/mix_fruit.png",
+        "product_img2": "/src/assets/Products/tropical.png",
+        "more_info_link": "https://example.com/info/mix_fruit_flavour",
+        "nutrition": {
+            "calories": 7,
+            "total_fat": "0.3g",
+            "sodium": "4mg",
+            "total_carbohydrate": "1.5g",
+            "sugars": "1.7g",
+            "protein": "0g"
+        }
+    },
+    {
+        "id": 4,
+        "name": "WinterMint Flavour",
+        "category": "WinterMint Flavour-cat",
+        "description": "The smooth and refreshing flavour of chiclets winter mint gives you the redness you need to seize the situation and come out stronger than you were. Prepare your breath now with some chiclets wintermint.",
+        "ingredients": [
+            "Natural and Artificial Flavors",
+            "Sugar",
+            "Soy Lecithin",
+            "Aspartame",
+            "Acesulfame K"
+        ],
+        "buy_link": "https://example.com/buy",
+        "product_img": "/assets/Product-transbg/wintermint.png",
+        "product_img2": "/src/assets/Products/tropical.png",
+        "more_info_link": "https://example.com/info/wintermint_flavour",
+        "nutrition": {
+            "calories": 5,
+            "total_fat": "0.1g",
+            "sodium": "3mg",
+            "total_carbohydrate": "1.2g",
+            "sugars": "1.3g",
+            "protein": "0g"
+        }
+    },
+    {
+        "id": 5,
+        "name": "orange flavour",
+        "category": "orange flavour-cat",
+        "description": "Breath freshening with Chiclets Orange Flavour is a delightful option. Chewing chiclets gum after meals helps to clean teeth and freshen your breath. It is lightweight and convenient to store in a desk drawer or rear of your car.",
+        "ingredients": [
+            "BHT (to maintain freshness)",
+            "Colors (Yellow 5, Red 40, Blue 1)",
+            "Corn Syrup",
+            "Soy Lecithin",
+            "Gum Base"
+        ],
+        "buy_link": "https://example.com/buy",
+        "product_img": "/assets/Product-transbg/orange.png",
+        "product_img2": "/src/assets/Product-transbg/tropical.png",
+        "more_info_link": "https://example.com/info/orange_flavour",
+        "nutrition": {
+            "calories": 9,
+            "total_fat": "0.1g",
+            "sodium": "1mg",
+            "total_carbohydrate": "1.8g",
+            "sugars": "1.4g",
+            "protein": "0g"
+        }
+    },
+    {
+        "id": 6,
+        "name": "strawberry flavour",
+        "category": "strawberry flavour-cat",
+        "description": "Breath freshening with Chiclets strawberry Flavour is a delightful option. Chewing chiclets gum after meals helps to clean teeth and freshen your breath. It is lightweight and convenient to store in a desk drawer or rear of your car.",
+        "ingredients": [
+            "Gum Base",
+            "Sugar",
+            "Soy Lecithin",
+            "Acesulfame K",
+            "Colors (Yellow 5, Red 40, Blue 1)"
+        ],
+        "buy_link": "https://example.com/buy",
+        "product_img": "/assets/Product-transbg/strawberry.png",
+        "product_img2": "/src/assets/Products/tropical.png",
+        "more_info_link": "https://example.com/info/strawberry_flavour",
+        "nutrition": {
+            "calories": 6,
+            "total_fat": "0.2g",
+            "sodium": "1mg",
+            "total_carbohydrate": "1.1g",
+            "sugars": "1.8g",
+            "protein": "0g"
+        }
+    }
+]

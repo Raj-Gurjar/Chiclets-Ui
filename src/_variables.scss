@@ -1,0 +1,135 @@
+$color-brand-primary: #0358d6;
+$color-brand-secondary: #022e70;
+$color-brand-secondary-opacity: rgba(0, 0, 0, 0.2);
+$color-brand-secondary-opacity-dark: #db0000;
+$color-brand-secondary-medium: #db0000;
+$color-brand-secondary-darker: #db0000;
+$color-brand-tertiary: #ffe602;
+$color-brand-quaternary: #000;
+$color-brand-highlight: #a8c8df;
+$color-brand-highlight-secondary: #c6c6c6;
+$color-brand-highlight-tertiary: #fff;
+$color-brand-highlight-quaternary: #01ad1d;
+$color-brand-highlight-quinary: #239df6;
+$color-brand-highlight-senary: #239df6;
+$color-brand-highlight-septenary: #239df6;
+$color-brand-highlight-octonary: #239df6;
+$color-brand-plain-light: #fff;
+$color-brand-plain-dark: #000;
+$color-brand-plain-dark-opacity: rgba(0, 0, 0, 0.2);
+$color-brand-almost-black: #212020;
+$color-brand-outline-highlight: $color-brand-plain-dark;
+$trident-color-plain-light-opacity: #a5da6f;
+$trident-input-border-color: #0247ad;
+$color-brand-product-page-01: #0e8562;
+$color-brand-product-page-02: #0358d6;
+$color-brand-product-page-03: #f26f25;
+$color-brand-product-page-04: #d20d54;
+$trident-overlay-color: rgba(2, 71, 173, 0.9);
+$color-text-primary: $color-brand-plain-light;
+$color-text-secondary: $color-brand-plain-light;
+$color-text-tertiary: $color-brand-plain-dark;
+$border-radius-primary: 3.2rem;
+$border-radius-secondary: 6rem;
+$border-radius-tertiary: 2.4rem;
+$border-radius-quaternary: 0.2rem;
+$border-radius-quinary: 2rem;
+$trident-border-radius-small: 1.6rem;
+$base-font-family: "Open Sans", sans-serif;
+$secondary-font-family: "Poppins", "Open Sans";
+$tertiary-font-family: "Poppins", "Open Sans";
+$base-font-size: 1.8rem;
+$base-font-color: $color-text-primary;
+$title-color: $color-text-primary;
+$quote-text-color: #fff;
+$spacing-1x: 0.4rem;
+$spacing-2x: 0.8rem;
+$spacing-3x: 1.2rem;
+$spacing-4x: 1.6rem;
+$spacing-5x: 2rem;
+$spacing-6x: 2.4rem;
+$spacing-7x: 2.8rem;
+$spacing-8x: 3.2rem;
+$spacing-9x: 3.6rem;
+$spacing-10x: 4rem;
+$spacing-11x: 4.4rem;
+$spacing-12x: 4.8rem;
+$spacing-13x: 5.2rem;
+$spacing-14x: 5.6rem;
+$spacing-15x: 6rem;
+$spacing-16x: 6.4rem;
+$spacing-18x: 7.2rem;
+$spacing-19x: 7.6rem;
+$spacing-20x: 8rem;
+$spacing-21x: 8.4rem;
+$spacing-22x: 8.8rem;
+$spacing-23x: 9.2rem;
+$spacing-24x: 9.6rem;
+$spacing-25x: 10rem;
+$spacing-26x: 10.4rem;
+$spacing-27x: 10.8rem;
+$spacing-28x: 11.2rem;
+$spacing-29x: 11.6rem;
+$spacing-30x: 12rem;
+$spacing-31x: 12.4rem;
+$spacing-32x: 12.8rem;
+$spacing-35x: 14rem;
+$spacing-37x: 14.8rem;
+$spacing-39x: 15.6rem;
+$spacing-40x: 16rem;
+$spacing-45x: 18rem;
+$spacing-47x: 18.8rem;
+$spacing-48x: 19.2rem;
+$spacing-55x: 22rem;
+$translate-x-negative-50: -50%;
+$translate-x-negative-100: -100%;
+$translate-x-50: 50%;
+$translate-x-100: 100%;
+$translate-y-negative-50: -50%;
+$translate-y-negative-100: -100%;
+$translate-y-50: 50%;
+$translate-y-100: 50%;
+$rotate-0: 0deg;
+$rotate-180-negative: -180deg;
+$rotate-90-negative: -90deg;
+$rotate-180: 180deg;
+$rotate-90: 90deg;
+$shadow-blue:
+    0 1.6604px 2.2968px 0 rgb(0 0 0/2%),
+    0 3.9901px 5.5196px 0 rgb(0 0 0/3%),
+    0 7.5129px 10.3929px 0 rgb(0 0 0/4%),
+    0 13.4018px 18.5391px 0 rgb(0 0 0/4%),
+    0 25.0666px 34.6754px 0 rgb(0 0 0/5%),
+    0 60px 83px 0 rgb(0 0 0/7%);
+$shadow-pink: 0 0 48px 0 rgba(0, 0, 0, 0.4);
+$page-bg-color: $color-brand-highlight-secondary;
+$round-button-transition:
+    color 350ms ease-out,
+    transform 350ms cubic-bezier(0.21, 1.01, 0.66, 1.44);
+$trident-text-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+$trident-box-shadow: 0 0 29px 0 hsla(213, 4%, 59%, 0.3);
+$trident-block-shadow:
+    0 2.7673px 2.2138px 0 rgb(0 39 82/2%),
+    0 6.6501px 5.3201px 0 rgb(0 39 82/3%),
+    0 12.5216px 10.0172px 0 rgb(0 39 82/4%),
+    0 22.3363px 17.8691px 0 rgb(0 39 82/4%),
+    0 41.7776px 33.4221px 0 rgb(0 39 82/5%),
+    0 100px 80px 0 rgb(0 39 82/7%);
+$squibbly-inline-size: 6.5rem;
+$squibbly-navigation-inline-size: 6.5rem;
+$grid-column-template: repeat(4, 1fr);
+$grid-column-gap: 1.6rem;
+$grid-max-size: 111.8rem;
+$grid-margin-inline-start: $spacing-6x;
+$grid-margin-inline-end: $spacing-6x;
+
+$title-mega-font-size: 7.2rem;
+$title-h1-font-size: 50px;
+$title-h2-font-size: 4.2rem;
+$title-h3-font-size: 4rem;
+$title-h4-font-size: 3.2rem;
+$title-h4-bold-font-size: 3.2rem;
+$title-h5-font-size: 2.4rem;
+$title-h6-font-size: 2rem;
+$paragraph-medium-font-size: 3.2rem;
+$paragraph-large-font-size: 5.6rem;
