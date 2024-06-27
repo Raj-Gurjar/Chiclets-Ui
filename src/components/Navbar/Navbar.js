@@ -17,6 +17,13 @@ export default function Navbar() {
         </span1>
       </div>
       <div className="nav-other-links">
+        <Link to="/pd" style={{ textDecoration: "none" }}>
+          <span>pd</span>
+        </Link>
+        <br />
+        <Link to="/stk" style={{ textDecoration: "none" }}>
+          <span>stk</span>
+        </Link>
         <h3>FAQ</h3>
         <h3>History</h3>
       </div>

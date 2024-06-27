@@ -19,6 +19,7 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-col-container">
+        
         <div className="footer-col">
           <h2>NEWEST PRODUCTS</h2>
 

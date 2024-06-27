@@ -5,17 +5,16 @@ import ProductData from "../../Data/ProductsData.json";
 export default function HomePick2() {
   return (
     <div className="homePick-2-container">
-      <h1>PICK YOUR CHICKLET</h1>
+      <h1>PICK YOUR CHICLET</h1>
 
-      <div className="flex flex-wrap justify-center gap-4">
-        {ProductData?.map((product) => (
+      <div className="homePick-product-cards">
+        {ProductData?.slice(3, 6).map((product) => (
           <div key={product?.id}>
             <div>
               <ProductCard1 data={product} />
             </div>
           </div>
         ))}
-       
       </div>
     </div>
   );

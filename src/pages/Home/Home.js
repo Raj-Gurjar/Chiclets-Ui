@@ -12,18 +12,17 @@ import Logo from "../../components/Logo";
 import RandomFigures from "./RandomFigures/RandomFigures";
 import Navbar from "../../components/Navbar/Navbar";
 import CenterText from "./CenterText";
+import HomeFeature from "./HomeFeature";
 
 export default function Home() {
   return (
-    <div>
+    <div className="pb-[20px]">
       <div>
         <HomeTopSection />
       </div>
 
-      <div>
-        <RandomFigures />
-      </div>
-      
+      <div>{/* <RandomFigures /> */}</div>
+
       <div>
         <HomePick />
       </div>
@@ -33,6 +32,9 @@ export default function Home() {
 
       <div>
         <CenterText />
+      </div>
+      <div>
+        <HomeFeature />
       </div>
       <div>
         <HomeFollow />

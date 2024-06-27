@@ -6,15 +6,18 @@
   color: #fff;
   border-radius: 30px;
   margin: 10px 30px;
+  padding-top: 120px;
 
   .footer-col-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 10px;
+    // background-color: red;
+    padding: 10px;
 
     .footer-col {
-      flex: 40%;
-      // background-color: red;
+      width: 100%;
+      // background-color: gray;
 
       h2 {
         font-size: 32px;
@@ -86,6 +89,93 @@
 
       &:hover {
         transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .footer-container {
+    // padding: 50px 20px;
+    margin: 10px 10px;
+
+    .footer-col-container {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      gap: 30px;
+      // background-color: red;
+
+      .footer-col {
+        flex: 1;
+        // background-color: green;
+        width: 100%;
+
+        h2 {
+          font-size: 27px;
+          margin-bottom: 20px;
+        }
+
+        .footer-link {
+          // background-color: red;
+
+          gap: 30px;
+
+          .footer-icon {
+            background-color: #02255a;
+            border-radius: 100%;
+            padding: 4px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease-in-out;
+          }
+          .footer-link-text {
+            h3 {
+              font-size: 16px;
+              color: rgba(255, 255, 255, 0.8);
+              font-weight: 500;
+              font-family: $base-font-family;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+
+          &:hover {
+            .footer-icon {
+              background-color: #000916;
+              color: white;
+              transform: translateX(30%);
+            }
+            .footer-link-text {
+              h3 {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-social-container {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: left;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+
+      a {
+        color: rgba(255, 255, 255, 0.967);
+        font-size: 25px;
+        font-weight: 200;
+        background-color: #02255a;
+        padding: 13px;
+        border-radius: 100%;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

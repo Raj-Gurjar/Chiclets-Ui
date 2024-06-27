@@ -14,6 +14,7 @@ import Loader from "./components/Loader/Loader";
 import Navbar from "./components/Navbar/Navbar";
 import Logo from "./components/Logo";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Sticky from "./pages/Sticky";
 
 // const Home = lazy(() => import("./pages/Home/Home.js"));
 // const Shop = lazy(() => import("./pages/Shop"));
@@ -24,18 +25,20 @@ function App() {
   return (
     <div className="app-cls">
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Logo />
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/shop" element={<Shop />} /> */}
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/pd" element={<ProductDetails />} />
+        <Route path="/stk" element={<Sticky />} />
 
         {/* <Route path="/cart" element={<Cart />} /> */}
         {/* <Route path="/pages1" element={<pages1 />} /> */}
       </Routes>
+      {/* <Footer/> */}
     </div>
   );
 }

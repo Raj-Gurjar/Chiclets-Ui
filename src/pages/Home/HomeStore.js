@@ -35,7 +35,7 @@ export default function HomeStore() {
                 })}
               </select>
 
-              <span>
+              <span className="select-box-arrow">
                 <IoIosArrowDown />
               </span>
             </div>
@@ -53,7 +53,7 @@ export default function HomeStore() {
                   return <option key={product?.id}>{product?.name}</option>;
                 })}
               </select>
-              <span>
+              <span className="select-box-arrow">
                 <IoIosArrowDown />
               </span>
             </div>

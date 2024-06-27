@@ -6,7 +6,7 @@ export default function HomeTopSection() {
   return (
     <div className="home-top-container">
       <div className="home-img-container">
-        <img src={home_bg} alt="" />
+        <img src={home_bg} alt="home-img" />
       </div>
 
       <div className="home-text-container">
