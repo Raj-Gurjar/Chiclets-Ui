@@ -1,35 +1,17 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import NavbarBig from "./NavbarBig";
+import NavbarSmall from "./NavbarSmall";
 import "./Navbar.scss";
-import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-  const navigate = useNavigate();
-
   return (
-    <div className="navbar-container">
-      <div className="nav-product-btn">
-        <Link to="/products" style={{ textDecoration: "none" }}>
-          <span>PRODUCTS</span>
-        </Link>
-        <span1>
-          <FaArrowRight />
-        </span1>
-      </div>
-      <div className="nav-other-links">
-        <Link to="/pd" style={{ textDecoration: "none" }}>
-          <span>pd</span>
-        </Link>
-        <br />
-        <Link to="/stk" style={{ textDecoration: "none" }}>
-          <span>stk</span>
-        </Link>
-        <h3>FAQ</h3>
-        <h3>History</h3>
+    <div>
+      <div className="navbar-big">
+        <NavbarBig />
       </div>
 
-      <div className="nav-more-links">
-        <h3>More</h3>
+      <div className="navbar-small">
+        <NavbarSmall />
       </div>
     </div>
   );

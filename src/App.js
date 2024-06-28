@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +14,10 @@ import Loader from "./components/Loader/Loader";
 import Navbar from "./components/Navbar/Navbar";
 import Logo from "./components/Logo";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
-import Sticky from "./pages/Sticky";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Error from "./pages/Error";
 
 // const Home = lazy(() => import("./pages/Home/Home.js"));
 // const Shop = lazy(() => import("./pages/Shop"));
@@ -22,23 +25,35 @@ import Sticky from "./pages/Sticky";
 // const pages1 = lazy(() => import("./pages/pages1"));
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      debounceDelay: 50,
+
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div className="app-cls">
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
         <Logo />
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/shop" element={<Shop />} /> */}
+
         <Route path="/products" element={<Products />} />
         <Route path="/pd" element={<ProductDetails />} />
-        <Route path="/stk" element={<Sticky />} />
+        <Route path="/products/:productId" element={<Products />} />
+        <Route
+          path="/product-details/:productId"
+          element={<ProductDetails />}
+        />
 
-        {/* <Route path="/cart" element={<Cart />} /> */}
-        {/* <Route path="/pages1" element={<pages1 />} /> */}
+        <Route path="*" element={<Error />} />
       </Routes>
-      {/* <Footer/> */}
     </div>
   );
 }

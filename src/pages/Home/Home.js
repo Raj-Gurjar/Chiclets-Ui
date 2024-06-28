@@ -9,12 +9,13 @@ import Footer from "../../components/Footer/Footer";
 
 import Logo from "../../components/Logo";
 // import Triangle from "./RandomFigures/Triangle";
-import RandomFigures from "./RandomFigures/RandomFigures";
-import Navbar from "../../components/Navbar/Navbar";
+import RandomFigures from "../../components/RandomFigures/RandomFigures";
+import Navbar from "../../components/Navbar/NavbarBig";
 import CenterText from "./CenterText";
 import HomeFeature from "./HomeFeature";
 
 export default function Home() {
+  
   return (
     <div className="pb-[20px]">
       <div>

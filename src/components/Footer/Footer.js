@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import "../../pages/Home/Home.scss";
 import FooterData from "../../Data/FooterData.json";
-import ProductData from "../../Data/ProductsData.json"
+import ProductData from "../../Data/ProductsData.json";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -14,28 +14,32 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   const newProductsData = FooterData?.NewProducts;
   const mainPagesData = FooterData?.MainPage;
-  const productCategoryData = FooterData?.ProductCategory;
+  const productNames = ProductData;
 
   return (
     <div className="footer-container">
       <div className="footer-col-container">
-        
         <div className="footer-col">
           <h2>NEWEST PRODUCTS</h2>
 
-          {newProductsData?.map((product) => (
-            <div className="footer-link">
-              <div className="footer-icon">
-                <FaArrowRight />
-              </div>
+          <div>
+            {productNames?.slice(0,3)?.map((product) => (
+              <div className="footer-link">
+                <div className="footer-icon">
+                  <FaArrowRight />
+                </div>
 
-              <div className="footer-link-text">
-                <Link to={product?.link} style={{ textDecoration: "none" }}>
-                  <h3>{product?.name}</h3>
-                </Link>
+                <div className="footer-link-text">
+                  <Link
+                    to={`/products/${product.id}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <h3>{product?.name}</h3>
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="footer-col">
@@ -62,15 +66,18 @@ export default function Footer() {
           <h2>PRODUCT CATEGORIES</h2>
 
           <div>
-            {productCategoryData?.map((category) => (
+            {productNames?.map((product) => (
               <div className="footer-link">
                 <div className="footer-icon">
                   <FaArrowRight />
                 </div>
 
                 <div className="footer-link-text">
-                  <Link to={category?.link} style={{ textDecoration: "none" }}>
-                    <h3>{category?.name}</h3>
+                  <Link
+                    to={`/products/${product.id}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <h3>{product?.name}</h3>
                   </Link>
                 </div>
               </div>

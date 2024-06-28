@@ -1,6 +1,7 @@
 import React from "react";
 import YellowBtn from "../UI/Buttons/YellowBtn";
 import "./ProductCard.scss";
+import { Link } from "react-router-dom";
 
 export default function ProductCard2({ data }) {
   return (
@@ -14,7 +15,9 @@ export default function ProductCard2({ data }) {
           <h2>{data?.name}</h2>
         </div>
         <div>
-          <YellowBtn btn_text={"more info"} />
+          <Link to={`/product-details/${data.id}`} state={{ product: data }}>
+            <YellowBtn btn_text={"more info"} />
+          </Link>
           <h3>Buy Now</h3>
         </div>
       </div>

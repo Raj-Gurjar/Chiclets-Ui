@@ -18,14 +18,18 @@
     top: 10px;
     left: 30px;
     height: 100px;
-    width: 150px;
+    width: 100px;
     z-index: 99;
     background-color: white;
 
     img {
-        position: relative;
-        vertical-align: middle;
-        transform: scale(3);
-        margin-top: -30px;
+        // position: relative;
+        // // vertical-align: middle;
+        // // transform: scale(1);
+        // object-fit: contain;
+        // margin-top: -30px;
+        // background-color: red;
     }
 }
+
+//!-- animations----

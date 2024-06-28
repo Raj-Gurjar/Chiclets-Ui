@@ -4,6 +4,9 @@
     padding-top: 200px;
     padding-bottom: 20px;
     // background-color: red;
+    a {
+        color: white;
+    }
 
     .product-heading {
         h1 {
@@ -17,8 +20,8 @@
     .product-category-container {
         display: flex;
         // background-color: red;
-        justify-content: left;
-        padding: 20px;
+        justify-content: space-around;
+        padding: 25px 10px;
         // width: 60%;
         gap: 80px;
 
@@ -32,15 +35,27 @@
             flex-wrap: wrap;
             row-gap: 10px;
 
-            h3 {
-                width: 200px;
-                font-size: 20px;
-                text-transform: capitalize;
+            .product-cat-line {
                 border-top: 2px solid white;
-                padding-top: 10px;
-                font-family: $secondary-font-family;
-                font-weight: 800;
-                // background-color: red;
+                width: 200px;
+                justify-content: left;
+                align-items: start;
+                text-align: left;
+
+                h3 {
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    padding-top: 10px;
+                    font-family: $secondary-font-family;
+                    font-weight: 800;
+                    // background-color: red;
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        // transform-origin: 0% 100%;
+                    }
+                }
             }
         }
 
@@ -182,10 +197,17 @@
                 gap: 5px;
 
                 flex-wrap: wrap;
-
-                h3 {
+                .product-cat-line {
+                    border-top: 2px solid white;
                     width: 150px;
-                    font-size: 18px;
+                    justify-content: left;
+                    align-items: start;
+                    text-align: left;
+
+                    h3 {
+                        width: 150px;
+                        font-size: 18px;
+                    }
                 }
             }
         }

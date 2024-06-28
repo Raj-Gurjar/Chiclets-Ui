@@ -1,6 +1,6 @@
 @import "../../variables";
 
-.navbar-container {
+.navbar-big-container {
     background-color: #022e70;
     z-index: 999;
     position: absolute;
@@ -9,6 +9,8 @@
     padding: 20px 10px;
     border-radius: 20px;
     box-shadow: $shadow-blue;
+
+    animation: zoom-out 1s ease-in-out forwards;
 
     .nav-product-btn {
         padding: 6px 25px;
@@ -61,6 +63,66 @@
             margin-left: 10px;
             font-weight: 400;
             padding-bottom: 10px;
+        }
+    }
+}
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(1.8) translateZ(600px);
+        opacity: 0;
+    }
+    90% {
+        transform: scale(0.96) translateZ(40px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1) translateZ(0);
+        opacity: 1;
+    }
+}
+
+.navbar-small-container {
+    background-color: #022e70;
+    z-index: 999;
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: $shadow-blue;
+
+    animation: zoom-out 0.5s ease-in-out forwards;
+
+    display: none;
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+
+        padding-top: 60px;
+        padding-right: 50px;
+        // background-color: red;
+    }
+}
+//! --- responsive ---
+
+@media (max-width: 1000px) {
+    .navbar-big-container {
+        display: none;
+    }
+    .navbar-small-container {
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .navbar-small-container {
+        h1 {
+            font-size: 18px;
+            font-weight: 700;
+
+            padding-top: 50px;
+            padding-right: 40px;
+            // background-color: red;
         }
     }
 }

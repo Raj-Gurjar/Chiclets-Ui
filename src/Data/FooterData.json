@@ -26,38 +26,8 @@
             "id": 2,
             "name": "FAQ",
             "link": "d"
-        },
-        {
-            "id": 3,
-            "name": "xyx",
-            "link": "d"
         }
-    ],
-    "ProductCategory": [
-        {
-            "id": 1,
-            "name": "xyx",
-            "link": "d"
-        },
-        {
-            "id": 2,
-            "name": "xyx",
-            "link": "d"
-        },
-        {
-            "id": 3,
-            "name": "xyx",
-            "link": "d"
-        },
-        {
-            "id": 4,
-            "name": "xyx",
-            "link": "d"
-        },
-        {
-            "id": 5,
-            "name": "xyx",
-            "link": "d"
-        }
+      
     ]
+   
 }

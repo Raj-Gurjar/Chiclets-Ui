@@ -1,10 +1,22 @@
 @import "../../../variables";
 
 .universal-btn {
+    // color: initi;
+
+    .yellow-btn {
+        background-color: #ffe602;
+        color: black;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
     button {
         padding: 20px 30px;
         font-family: $secondary-font-family;
         border-radius: $border-radius-primary;
+        transform: all 10.3s ease;
 
         h4 {
             text-transform: uppercase;

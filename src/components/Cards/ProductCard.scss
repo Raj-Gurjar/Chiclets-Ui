@@ -2,7 +2,7 @@
 
 .product-card-container {
     background-color: white;
-    color: black;
+    // color: black;
     width: 350px;
     min-height: 450px;
     border-radius: 30px;
@@ -13,6 +13,14 @@
     align-items: center;
     padding: 30px 50px;
     box-shadow: $shadow-pink;
+    transition: all 0.3s ease;
+
+    &:hover {
+        // transform;
+        // background-color: red;
+        transform: rotate(-3deg);
+        transform-origin: 50% 50%;
+    }
 
     .product-img-container {
         // background-color: red;
@@ -34,13 +42,14 @@
             text-transform: uppercase;
             font-size: 22px;
             font-weight: 700;
+            color: black;
         }
     }
 }
 
 .product-card2-container {
     background-color: white;
-    color: black;
+    // color: black;
     width: 300px;
     height: 350px;
     border-radius: 30px;
@@ -52,6 +61,15 @@
     padding: 30px 50px;
     position: relative;
     box-shadow: $shadow-pink;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+        // transform;
+        // background-color: red;
+        transform: rotate(-3deg);
+        transform-origin: 50% 50%;
+    }
 
     .product-img-container {
         position: absolute;
@@ -76,6 +94,7 @@
                 text-transform: uppercase;
                 font-size: 22px;
                 font-weight: 700;
+                color: black;
             }
         }
 
@@ -84,14 +103,15 @@
             margin-top: 20px;
             text-decoration: underline;
             font-weight: 700;
+            color: black;
         }
     }
 }
 
 @media (max-width: 900px) {
     .product-card-container {
-        background-color: white;
-        color: black;
+       
+      
         width: 350px;
         min-height: 450px;
         border-radius: 30px;
@@ -101,8 +121,7 @@
         flex-direction: column;
         align-items: center;
         padding: 10px 20px;
-        box-shadow: $shadow-pink;
-
+      
         .product-img-container {
             // background-color: red;
 
@@ -139,7 +158,6 @@
             // background-color: red;
 
             img {
-            
             }
         }
 
