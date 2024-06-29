@@ -15,6 +15,7 @@ export default function Footer() {
   const newProductsData = FooterData?.NewProducts;
   const mainPagesData = FooterData?.MainPage;
   const productNames = ProductData;
+  const OtherLinks = FooterData?.OtherLinks;
 
   return (
     <div className="footer-container">
@@ -23,7 +24,7 @@ export default function Footer() {
           <h2>NEWEST PRODUCTS</h2>
 
           <div>
-            {productNames?.slice(0,3)?.map((product) => (
+            {productNames?.slice(0, 3)?.map((product) => (
               <div className="footer-link">
                 <div className="footer-icon">
                   <FaArrowRight />
@@ -102,6 +103,20 @@ export default function Footer() {
         <a href="https://www.linkedin.com/in/your-linkedin">
           <FiYoutube />
         </a>
+      </div>
+
+      <div className="other-links-container-outer">
+        <div className="other-links-container">
+          {OtherLinks?.map((data) => (
+            <div key={data?.id} className="other-links-wrapper">
+              <a href={data?.link}>{data?.name}</a>
+            </div>
+          ))}
+        </div>
+
+        <div className="copyright-container">
+          <h4>© Perfetti Van Melle Benelux, B.V. 2024</h4>
+        </div>
       </div>
     </div>
   );

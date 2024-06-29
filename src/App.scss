@@ -6,8 +6,37 @@
 .app-cls {
     background-color: #0358d6;
     color: white;
+    position: relative;
     // padding-bottom: 20px;
     // padding-bottom: 20px;
+    // display: flex;
+    // justify-content: center;
+
+    .app-cls-inside {
+        // display: flex;
+        // justify-content: center;
+        // // max-width: 1920px;
+        // align-items: center;
+    }
+}
+
+@media (min-width: 1300px) {
+    .app-cls {
+        background-color: #0358d6;
+        color: white;
+        position: relative;
+        // padding-bottom: 20px;
+        // padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
+        .app-cls-inside {
+            display: flex;
+            justify-content: center;
+            // max-width: 1920px;
+            align-items: center;
+        }
+    }
 }
 
 //! ---Logo--

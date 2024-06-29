@@ -29,7 +29,9 @@ body {
 body,
 html {
   overflow-x: hidden !important;
-  a {
+
+  a:-webkit-any-link {
     text-decoration: none;
+    color: inherit;
   }
 }

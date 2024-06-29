@@ -41,19 +41,22 @@ function App() {
         <Navbar />
         <Logo />
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
 
-        <Route path="/products" element={<Products />} />
-        <Route path="/pd" element={<ProductDetails />} />
-        <Route path="/products/:productId" element={<Products />} />
-        <Route
-          path="/product-details/:productId"
-          element={<ProductDetails />}
-        />
+      <div className="app-cls-inside">
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route path="*" element={<Error />} />
-      </Routes>
+          <Route path="/products" element={<Products />} />
+          <Route path="/pd" element={<ProductDetails />} />
+          <Route path="/products/:productId" element={<Products />} />
+          <Route
+            path="/product-details/:productId"
+            element={<ProductDetails />}
+          />
+
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </div>
     </div>
   );
 }

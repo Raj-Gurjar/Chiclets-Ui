@@ -16,7 +16,7 @@
         padding: 20px 30px;
         font-family: $secondary-font-family;
         border-radius: $border-radius-primary;
-        transform: all 10.3s ease;
+        transform: all 0.3s ease;
 
         h4 {
             text-transform: uppercase;
@@ -26,4 +26,20 @@
             margin: auto;
         }
     }
+}
+
+.video-btn {
+    button {
+        // background-color: #0247ad;
+        padding: 7px 7px 0px;
+
+        h4 {
+            font-size: 46px;
+            padding: 30px;
+            border-radius: 100%;
+            font-weight: 900;
+            background-color: #0247ad;
+        }
+    }
+    // #07285d
 }

@@ -15,9 +15,8 @@ import CenterText from "./CenterText";
 import HomeFeature from "./HomeFeature";
 
 export default function Home() {
-  
   return (
-    <div className="pb-[20px]">
+    <div className="home-main max-w-[1280px]">
       <div>
         <HomeTopSection />
       </div>
