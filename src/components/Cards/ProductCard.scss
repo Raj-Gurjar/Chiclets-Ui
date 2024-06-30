@@ -26,7 +26,7 @@
         // background-color: red;
 
         img {
-            height: 180px;
+            height: 200px;
             width: 100%;
             margin-top: -50px;
             // background-color: red;
@@ -39,9 +39,10 @@
         margin: 50px 0px;
 
         h2 {
-            text-transform: uppercase;
-            font-size: 22px;
-            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: $secondary-font-family;
             color: black;
         }
     }
@@ -75,7 +76,7 @@
         position: absolute;
         top: -120px;
         img {
-            height: 200px;
+            height: 220px;
             width: 100%;
 
             // background-color: red;
@@ -92,14 +93,15 @@
             margin-bottom: 60px;
             h2 {
                 text-transform: uppercase;
-                font-size: 22px;
+                font-size: 24px;
                 font-weight: 700;
                 color: black;
+                font-family: $secondary-font-family;
             }
         }
 
         h3 {
-            font-size: 19px;
+            font-size: 18px;
             margin-top: 20px;
             text-decoration: underline;
             font-weight: 700;
@@ -110,8 +112,6 @@
 
 @media (max-width: 900px) {
     .product-card-container {
-       
-      
         width: 350px;
         min-height: 450px;
         border-radius: 30px;
@@ -121,7 +121,7 @@
         flex-direction: column;
         align-items: center;
         padding: 10px 20px;
-      
+
         .product-img-container {
             // background-color: red;
 

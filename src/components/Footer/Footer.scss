@@ -3,12 +3,8 @@
 .footer-container {
   background-color: $color-brand-secondary;
 
-  padding: 65px 30px 45px;
   color: #fff;
   border-radius: 30px;
-  // margin: 10px 30px;
-  // max-width: 1920px;
-  // padding-top: 120px;
 
   .footer-col-container {
     display: flex;
@@ -22,7 +18,7 @@
       // background-color: gray;
 
       h2 {
-        font-size: 32px;
+        font-size: 40px;
         font-weight: 900;
         margin-bottom: 40px;
         font-family: $secondary-font-family;
@@ -83,10 +79,10 @@
 
     a {
       color: rgba(255, 255, 255, 0.967);
-      font-size: 30px;
+      font-size: 35px;
       font-weight: 200;
       background-color: #02255a;
-      padding: 20px;
+      padding: 15px;
       border-radius: 100%;
       transition: all 0.3s ease-in-out;
 
@@ -150,10 +146,23 @@
   }
 }
 
+@media (max-width: 1279px) {
+  .footer-container {
+    .footer-col-container {
+      .footer-col {
+        h2 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 750px) {
   .footer-container {
     // padding: 50px 20px;
-    margin: 10px 10px;
+    margin: 10px 0px;
+    // padding-bottom:10px;
 
     .footer-col-container {
       display: flex;

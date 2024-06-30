@@ -9,10 +9,7 @@ import { ToastContainer } from "react-toastify";
 
 import Home from "../src/pages/Home/Home";
 import Products from "../src/pages/Products/Products";
-import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
-import Navbar from "./components/Navbar/Navbar";
-import Logo from "./components/Logo";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
 import AOS from "aos";
@@ -37,17 +34,13 @@ function App() {
 
   return (
     <div className="app-cls">
-      <div>
-        <Navbar />
-        <Logo />
-      </div>
-
+  
       <div className="app-cls-inside">
         <Routes>
           <Route path="/" element={<Home />} />
 
           <Route path="/products" element={<Products />} />
-          <Route path="/pd" element={<ProductDetails />} />
+          {/* <Route path="/pd" element={<ProductDetails />} /> */}
           <Route path="/products/:productId" element={<Products />} />
           <Route
             path="/product-details/:productId"

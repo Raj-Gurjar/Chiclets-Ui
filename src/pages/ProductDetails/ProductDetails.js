@@ -9,12 +9,13 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 // Replace this with your actual product data
 import productData from "../../Data/ProductsData.json";
+import Header from "../../components/Header/Header";
 
 export default function ProductDetails() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const initialProductId = location.state?.product?.id || 1; 
+  const initialProductId = location.state?.product?.id || 1;
   const [currentProductId, setCurrentProductId] = useState(initialProductId);
 
   //!------ Carousel Logic
@@ -64,37 +65,41 @@ export default function ProductDetails() {
   };
 
   return (
-    <div className={`productDetails-container`} style={containerStyle}>
-      <div>
-        <ProductDetailsRoute data={currentProduct?.name} />
-      </div>
+    <div className={`productDetails-container1`} style={containerStyle}>
+      <div className="productDetails-container">
+        <div>
+          <Header />
+        </div>
+        <div>
+          <ProductDetailsRoute data={currentProduct?.name} />
+        </div>
 
-      <div className="productDetailCard-outer">
-        <ProductDetailCard productData={currentProduct} />
+        <div className="productDetailCard-outer">
+          <ProductDetailCard productData={currentProduct} />
 
-        <div className="productDetail-arrows">
-          <div
-            className="productDetail-back-arrow"
-            onClick={handleBackArrowClick}
-          >
-            <IoIosArrowBack />
-          </div>
+          <div className="productDetail-arrows">
+            <div
+              className="productDetail-back-arrow"
+              onClick={handleBackArrowClick}
+            >
+              <IoIosArrowBack />
+            </div>
 
-          <div
-            className="productDetail-forward-arrow"
-            onClick={handleForwardArrowClick}
-          >
-            <IoIosArrowForward />
+            <div
+              className="productDetail-forward-arrow"
+              onClick={handleForwardArrowClick}
+            >
+              <IoIosArrowForward />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <Recommendations productData={recommendations} />
+        <div>
+          <Recommendations productData={recommendations} />
+        </div>
       </div>
-
-      <div>
-        <Footer />
+      <div className="px-[30px]">
+        <Footer pt="150px" />
       </div>
     </div>
   );

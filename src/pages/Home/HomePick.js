@@ -4,8 +4,8 @@ import ProductData from "../../Data/ProductsData.json";
 import { Link } from "react-router-dom";
 
 const HomePick = () => (
-  <div className="homePick-1-container mb-[80px]">
-    <div className="section-heading mb-[40px]">
+  <div className="homePick-1-container">
+    <div className="section-heading">
       <h1>PICK YOUR CHICLET</h1>
     </div>
 
@@ -14,7 +14,7 @@ const HomePick = () => (
         <div key={product?.id}>
           <Link to={`/products/${product.id}`}>
             <div>
-              <ProductCard1 data={product} />
+              <ProductCard1 data={product} btn_name={"Buy Now"}/>
             </div>
           </Link>
         </div>

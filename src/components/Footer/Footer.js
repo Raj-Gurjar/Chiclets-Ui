@@ -11,14 +11,17 @@ import { FiYoutube } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
 
-export default function Footer() {
+export default function Footer({ pt = "50px" }) {
   const newProductsData = FooterData?.NewProducts;
   const mainPagesData = FooterData?.MainPage;
   const productNames = ProductData;
   const OtherLinks = FooterData?.OtherLinks;
 
   return (
-    <div className="footer-container">
+    <div
+      className={`footer-container px-[50px] pb-[50px]`}
+      style={{ paddingTop: pt }}
+    >
       <div className="footer-col-container">
         <div className="footer-col">
           <h2>NEWEST PRODUCTS</h2>

@@ -7,20 +7,19 @@
     background-color: #0358d6;
     color: white;
     position: relative;
-    // padding-bottom: 20px;
-    // padding-bottom: 20px;
-    // display: flex;
-    // justify-content: center;
 
     .app-cls-inside {
         // display: flex;
         // justify-content: center;
         // // max-width: 1920px;
         // align-items: center;
+        background-color: #0358d6;
     }
 }
-
-@media (min-width: 1300px) {
+// ::-webkit-scrollbar {
+//     display: none;
+// }
+@media (min-width: 1280px) {
     .app-cls {
         background-color: #0358d6;
         color: white;
@@ -39,26 +38,8 @@
     }
 }
 
-//! ---Logo--
-.logo-container {
-    border-radius: 100%;
-    padding: 10px;
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    height: 100px;
-    width: 100px;
-    z-index: 99;
-    background-color: white;
 
-    img {
-        // position: relative;
-        // // vertical-align: middle;
-        // // transform: scale(1);
-        // object-fit: contain;
-        // margin-top: -30px;
-        // background-color: red;
-    }
-}
+
+
 
 //!-- animations----

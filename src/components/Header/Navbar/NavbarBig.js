@@ -3,22 +3,17 @@ import { FaArrowRight } from "react-icons/fa";
 import "./Navbar.scss";
 import { Link, useLocation } from "react-router-dom";
 
-export default function NavbarBig() {
+export default function NavbarBig({ flag }) {
   const location = useLocation();
   const currentPath = location.pathname;
 
   return (
     <div className="navbar-big-container">
       <div className="nav-product-btn">
-        {currentPath === "/products" ? (
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <span>HOME</span>
-          </Link>
-        ) : (
-          <Link to="/products" style={{ textDecoration: "none" }}>
-            <span>PRODUCTS</span>
-          </Link>
-        )}
+        <Link to="/products">
+          <span>Products</span>
+        </Link>
+
         <span1>
           <FaArrowRight />
         </span1>

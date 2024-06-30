@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/chicklet logo.png";
+import logo from "../../assets/chiclets.png";
 import { Link } from "react-router-dom";
 
 export default function Logo() {
