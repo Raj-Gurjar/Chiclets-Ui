@@ -11,11 +11,9 @@ export default function Recommendations({ productData }) {
       <div className="homePick-product-cards">
         {productData?.map((product) => (
           <div key={product?.id}>
-            <Link to={`/products/${product.id}`}>
-              <div>
-                <ProductCard1 data={product} />
-              </div>
-            </Link>
+            <div>
+              <ProductCard1 data={product} />
+            </div>
           </div>
         ))}
       </div>

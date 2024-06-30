@@ -11,11 +11,11 @@ export default function HomePick2() {
       <div className="homePick-product-cards">
         {ProductData?.slice(3, 6)?.map((product) => (
           <div key={product?.id}>
-            <Link to={`/products/${product.id}`}>
+           
               <div>
                 <ProductCard1 data={product} btn_name={"View Product"} />
               </div>
-            </Link>
+          
           </div>
         ))}
       </div>
