@@ -5,12 +5,10 @@ import { Link } from "react-router-dom";
 
 export default function Recommendations({ productData }) {
   return (
-    <div className="recommendations-container">
-      <div className="">
-        <h1>You might also like</h1>
-      </div>
+    <div className="homePick-2-container">
+      <h1>You might also like</h1>
 
-      <div className="recommend-cards-container">
+      <div className="homePick-product-cards">
         {productData?.map((product) => (
           <div key={product?.id}>
             <Link to={`/products/${product.id}`}>

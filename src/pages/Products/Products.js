@@ -6,6 +6,7 @@ import ProductCard2 from "../../components/Cards/ProductCard2";
 import Footer from "../../components/Footer/Footer";
 import { useLocation, useParams } from "react-router-dom";
 import Header from "../../components/Header/Header";
+import star_img from "../../assets/Backgrounds/star01.png";
 
 const Products = () => {
   const location = useLocation();
@@ -44,6 +45,9 @@ const Products = () => {
 
   return (
     <div className="products-container1">
+      <div className="star-fixed">
+        <img src={star_img} alt="" />
+      </div>
       <div className="products-container">
         <div className="">
           <Header />
@@ -80,7 +84,7 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="px-[30px]">
+      <div className="footer-margin">
         <Footer />
       </div>
     </div>

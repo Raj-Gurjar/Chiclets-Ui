@@ -5,6 +5,8 @@
     margin-top: -10px;
     position: relative;
     padding-right: 20px;
+    // background-color: red;
+    // margin-bottom: 150px;
 }
 
 .logo-container {
@@ -21,5 +23,36 @@
 
     img {
         // background-color: white;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        // background-color: rgb(0, 255, 30);
+        display: flex;
+        justify-content: space-between;
+        margin-top: -10px;
+        position: relative;
+        padding-right: 20px;
+        // background-color: red;
+        margin-bottom: 150px;
+    }
+}
+@media (max-width: 750px) {
+    .logo-container {
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        // // left: 50%;
+        // transform: translate(-50%, -50%);
+
+        height: 150px;
+        width: 150px;
+        z-index: 99;
+        // background-color: white;
+
+        img {
+            // background-color: white;
+        }
     }
 }

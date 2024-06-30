@@ -10,6 +10,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 // Replace this with your actual product data
 import productData from "../../Data/ProductsData.json";
 import Header from "../../components/Header/Header";
+import star_img from "../../assets/Backgrounds/star01.png";
 
 export default function ProductDetails() {
   const location = useLocation();
@@ -66,6 +67,9 @@ export default function ProductDetails() {
 
   return (
     <div className={`productDetails-container1`} style={containerStyle}>
+      <div className="star-fixed">
+        <img src={star_img} alt="" />
+      </div>
       <div className="productDetails-container">
         <div>
           <Header />
@@ -97,7 +101,7 @@ export default function ProductDetails() {
           <Recommendations productData={recommendations} />
         </div>
       </div>
-      <div className="px-[30px]">
+      <div className="footer-margin">
         <Footer pt="150px" />
       </div>
     </div>

@@ -19,7 +19,7 @@ export default function Footer({ pt = "50px" }) {
 
   return (
     <div
-      className={`footer-container px-[50px] pb-[50px]`}
+      className={`footer-container `}
       style={{ paddingTop: pt }}
     >
       <div className="footer-col-container">

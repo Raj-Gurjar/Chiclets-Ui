@@ -12,6 +12,7 @@ import RandomFigures from "../../components/RandomFigures/RandomFigures";
 import CenterText from "./CenterText";
 import HomeFeature from "./HomeFeature";
 import Navbar from "../../components/Header/Navbar/Navbar";
+import star_img from "../../assets/Backgrounds/star01.png";
 
 export default function Home() {
   return (
@@ -19,6 +20,10 @@ export default function Home() {
       <div className="home-main">
         <div className="header2">
           <Navbar />
+        </div>
+
+        <div className="star-fixed">
+          <img src={star_img} alt="" />
         </div>
         <div>
           <HomeTopSection />
@@ -46,7 +51,7 @@ export default function Home() {
           <HomePick2 />
         </div>
       </div>
-      <div className="px-[25px] ">
+      <div className="footer-margin">
         <Footer pt={"150px"} />
       </div>
     </div>

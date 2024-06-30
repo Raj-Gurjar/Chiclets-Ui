@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function NavbarSmall() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -10,20 +12,27 @@ export default function NavbarSmall() {
   };
   console.log("cc", toggleMenu);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2900,
+      debounceDelay: 50,
+
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div className="navbar-small">
       <div className={`${!toggleMenu ? "navbar-small-btn" : "hidden"}`}>
-        <h1
-          onClick={() => handleMenuToggle()}
-          className="text-white text-2xl cursor-pointer"
-        >
+        <h1 onClick={() => handleMenuToggle()} className="menu-btn">
           Menu
         </h1>
       </div>
 
       <div className={` ${toggleMenu ? "small-menu-container" : "hidden"}`}>
         <div onClick={() => handleMenuToggle()} className="close-menu">
-          <span>
+          <span data-aos="zoom-in">
             <RxCross2 />
           </span>
         </div>

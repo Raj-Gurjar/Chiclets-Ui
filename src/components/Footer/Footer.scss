@@ -5,6 +5,7 @@
 
   color: #fff;
   border-radius: 30px;
+  padding: 0px 50px 50px;
 
   .footer-col-container {
     display: flex;
@@ -146,6 +147,10 @@
   }
 }
 
+.footer-margin {
+  // background-color: red;
+  padding: 0px 25px;
+}
 @media (max-width: 1279px) {
   .footer-container {
     .footer-col-container {
@@ -159,9 +164,11 @@
 }
 
 @media (max-width: 750px) {
+
   .footer-container {
-    // padding: 50px 20px;
-    margin: 10px 0px;
+    padding: 0px 20px 50px;
+    margin: 0px;
+    // padding-top: 0px;
     // padding-bottom:10px;
 
     .footer-col-container {
@@ -243,5 +250,10 @@
         }
       }
     }
+  }
+
+  .footer-margin {
+    // background-color: red;
+    padding: 0px 8px;
   }
 }
