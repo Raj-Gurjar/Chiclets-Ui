@@ -36,17 +36,17 @@
 
         h4 {
             font-size: 46px;
-            padding: 30px;
+            padding: 40px;
             border-radius: 100%;
             font-weight: 900;
-            background-color: #0247ad;
+            background-color: #022E70;
             transition: all 0.3s ease-in-out;
         }
 
         &:hover {
             h4 {
-                background-color: black;
-                transform: scale(1.2);
+                // background-color: black;
+                transform: scale(1.07);
             }
         }
     }

@@ -1,47 +1,58 @@
 @import "../../variables";
 
 .home-main {
-    padding: 0px 55px;
+    padding: 0px 75px;
     max-width: 1280px;
     padding-bottom: 30px;
     // background-color: red;
 }
 //!  ----Top section ---
 .home-top-container {
-    // background-color: rgb(245, 13, 13);
     z-index: 2;
     position: relative;
-
-    .nav-top-container {
-        position: relative;
-    }
+    display: flex;
+    justify-content: center;
 
     .home-img-container {
-        position: absolute;
-        left: -15%;
-        top: -15%;
-        z-index: 2;
-        margin: 0px -5%;
+        position: relative;
+
+        width: 710px;
+        margin-left: -13%;
+
         img {
-            height: 780px;
-            width: 780px;
+            height: 600px;
+            width: 85%;
             border-radius: 100%;
             object-fit: cover;
+            transform: scale(1.3);
+            z-index: 2;
+        }
+
+        .video-btn-container-1 {
+            position: absolute;
+            z-index: 99;
+            bottom: -4%;
+            right: 20%;
         }
     }
-    .home-text-container {
-        // background-color: green;
 
-        margin-left: 53%;
-        padding-top: 30%;
-        // margin-right:5% ;
+    .home-text-container {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        justify-content: center;
+        margin-top: 32%;
+        margin-left: 3%;
+        // background-color: red;
+
+        width: 50%;
 
         z-index: 2;
 
         h1 {
-            font-family: var($secondary-font-family);
-            text-shadow: var($trident-text-shadow);
-            // font-size: var($title-h1-font-size);
+            font-family: $secondary-font-family;
+            text-shadow: $trident-text-shadow;
             font-size: 72px;
             font-weight: 900;
             line-height: 0.89;
@@ -52,6 +63,7 @@
             font-size: 18px;
             margin-top: 30px;
             line-height: 1.4;
+            margin-bottom: 40px;
         }
     }
 }
@@ -69,7 +81,7 @@
 //!  ----Home Pick1 ---
 .homePick-1-container {
     z-index: 3;
-    padding-top: 10%;
+    padding-top: 18%;
     position: relative;
     margin-bottom: 10%;
     // background-color: red;
@@ -93,11 +105,11 @@
 
     .homePick-product-cards {
         display: flex;
-
-        justify-content: space-between;
-        gap: 16px;
+        justify-content: center;
+        gap: 30px;
         position: relative;
         z-index: 3;
+        // overflow-x: scroll;
     }
 }
 
@@ -198,29 +210,40 @@
 
 //! ---- Center Text -----
 .center-text-container {
-    margin: 100px auto;
-    padding: 140px 0px;
+    margin: 120px auto;
+    padding: 140px 0;
     text-align: center;
     position: relative;
     // background-color: green;
     z-index: 2;
-
-    .center-circle {
-        background-color: #0243a3;
-        height: 1000px;
-        width: 100%;
-        border-radius: 100%;
-        // margin: auto;
-
+    .star-02 {
         position: absolute;
-        top: -65vh;
-        z-index: -1;
+        top: 30%;
+        left: 0%;
     }
+    .center-circle-container {
+        position: relative;
+        display: inline-block;
 
-    h1 {
-        // font-family: $base-font-family;
-        font-size: 56px;
-        font-weight: 900;
+        h1 {
+            font-size: 56px;
+            font-weight: 900;
+            position: relative;
+            z-index: 1;
+            font-family: $base-font-family;
+        }
+
+        .center-circle {
+            background-color: #0243a3;
+            height: 1250px;
+            width: 1250px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
     }
 }
 
@@ -359,166 +382,254 @@
 
     .homePick-product-cards {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: center;
-        // overflow-x: scroll;
-        gap: 35px;
+        gap: 30px;
+        position: relative;
+        z-index: 3;
     }
 }
 
 //!------- Responsive --------
 
 @media (max-width: 1279px) {
-    .homePick-1-container {
-        margin-top: 100px;
-        z-index: 3;
-        padding: 20px 0px;
-        // background-color: green;
-        position: relative;
-
-        .section-heading {
-            h1 {
-                font-size: 35px;
-                // padding: 20px;
-                font-family: $secondary-font-family;
-                font-weight: 900;
-                margin-bottom: 60px;
-            }
-        }
-
-        .homePick-product-cards {
-            overflow-x: scroll;
-        }
-    }
-    .homePick-2-container {
-        margin-bottom: -70px;
-        padding: 0px 20px;
-        z-index: 9;
-        position: relative;
-        h1 {
-        }
-
-        .homePick-product-cards {
-            overflow-x: scroll;
-            // gap: 16px;
-        }
-    }
-}
-
-@media (max-width: 900px) {
     .home-main {
-        padding: 0px 10px;
+        padding: 0px 35px;
+
         // background-color: red;
     }
+    //!  ----Top section ---
     .home-top-container {
+        // background-color: rgb(245, 13, 13);
+        z-index: 2;
+        position: relative;
         display: flex;
         justify-content: center;
-        z-index: 2;
-
-        .home-img-container {
-            margin-left: -70vw;
-            margin-top: -10vh;
-            // left: -40px;
-            // position: absolute;
-            z-index: 2;
-            img {
-                height: 800px;
-                width: 1200px;
-                border-radius: 100%;
-                object-fit: fill;
-            }
-        }
-        .home-text-container {
-            // background-color: palegoldenrod;
-            margin-top: 30vh;
-            padding-right: 30px;
-            margin-left: 50px;
-            width: 50%;
-            z-index: 2;
-
-            h1 {
-                font-family: var($secondary-font-family);
-                text-shadow: var($trident-text-shadow);
-                // font-size: var($title-h1-font-size);
-                font-size: 60px;
-                font-weight: 900;
-                line-height: 0.89;
-            }
-
-            p {
-                font-weight: 700;
-                font-size: 20px;
-                margin-top: 30px;
-                line-height: 1.2;
-            }
-        }
-    }
-
-    .homePick-1-container {
-        margin-top: 100px;
-        z-index: 3;
-        position: relative;
-
-        .section-heading {
-            h1 {
-                font-size: 35px;
-                padding: 20px;
-                font-family: $secondary-font-family;
-                font-weight: 900;
-            }
-        }
-
-        .homePick-product-cards {
-            // display: flex;
-            // flex-wrap: wrap;
-            overflow-x: scroll;
-            // justify-content: center;
-            // gap: 16px;
-        }
-    }
-}
-
-@media (max-width: 750px) {
-    .home-top-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-
-        z-index: 2;
 
         .home-img-container {
             position: relative;
-            left: 0;
-            top: 0;
-            z-index: 2;
-            margin: 0px;
+            // padding: 10px;
+            width: 700px;
+            margin-left: -10%;
+            //  padding: 10%;
             img {
-                height: 450px;
-                width: 450px;
+                height: 580px;
+                width: 80%;
                 border-radius: 100%;
-                object-fit: fill;
+                object-fit: cover;
+                transform: scale(1.3);
+                z-index: 2;
+            }
+
+            .video-btn-container-1 {
+                // background-color: red;
+                position: absolute;
+                z-index: 99;
+                bottom: -4%;
+                right: 30%;
             }
         }
+
         .home-text-container {
-            margin-left: 0;
-            padding: 20px 0px;
+            margin-top: 35%;
+            margin-left: -2%;
+
+            width: 50%;
+
             z-index: 2;
 
             h1 {
-                font-size: 42px;
+                font-family: $secondary-font-family;
+                text-shadow: $trident-text-shadow;
+
+                font-size: 56px;
                 font-weight: 900;
                 line-height: 0.89;
-                // line-height: 22px;
             }
 
             p {
                 font-weight: 700;
                 font-size: 18px;
-                margin-top: 15px;
-                line-height: 1.2;
-                margin-bottom: 20px;
+                margin-top: 30px;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    //!  ----Home Pick1 ---
+    .homePick-1-container {
+        .section-heading {
+            h1 {
+                font-size: 32px;
+            }
+        }
+
+        .homePick-product-cards {
+            gap: 25px;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            // overflow-x: scroll;
+        }
+    }
+
+    //!  ---- Home Store ---
+    .home-store-container {
+        h1 {
+        }
+    }
+
+    //! ---- Center Text -----
+    .center-text-container {
+        .star-02 {
+        }
+        .center-circle-container {
+            h1 {
+                font-size: 42px;
+            }
+
+            .center-circle {
+                height: 1100px;
+                width: 1100px;
+            }
+        }
+    }
+
+    //!----- Home Features ------
+    .homeFeatures-container {
+        .homeFeatures-texts {
+            h1 {
+                font-size: 32px;
+            }
+            .tick-options-container {
+                .tick-point {
+                    .tick-icon {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    //! ---- Home Follow -----
+    .home-follow-container {
+        h1 {
+            // margin: auto;
+            text-align: center;
+            font-weight: 900;
+            font-size: 56px;
+            max-width: 100%;
+        }
+    }
+
+    //!  ----Home Pick2 ---
+    .homePick-2-container {
+        margin-bottom: -13%;
+
+        .homePick-product-cards {
+            gap: 25px;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .homePick-1-container {
+        .section-heading {
+            h1 {
+                font-size: 32px;
+            }
+        }
+
+        .homePick-product-cards {
+            gap: 25px;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            overflow-x: scroll;
+        }
+    }
+
+    .homePick-2-container {
+        margin-bottom: -13%;
+
+        .homePick-product-cards {
+            gap: 25px;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            overflow-x: scroll;
+            // background-color: red;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .home-main {
+        padding: 0px 15px;
+        // background-color: red;
+    }
+    .home-top-container {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        .home-img-container {
+            position: relative;
+        
+            width: 450px;
+            // margin: 0;
+            padding: 0;
+            margin-left: 13%;
+            img {
+                height: 450px;
+                width: 100%;
+                border-radius: 100%;
+                object-fit: cover;
+                transform: scale(1);
+                z-index: 2;
+                margin-left: -2%;
+            }
+
+            .video-btn-container-1 {
+                position: absolute;
+                z-index: 99;
+                bottom: 0%;
+                right: 20%;
+            }
+        }
+
+        .home-text-container {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            justify-content: center;
+            margin-top: 5%;
+            margin-left: 0%;
+            // background-color: red;
+
+            width: 50%;
+
+            z-index: 2;
+
+            h1 {
+                font-family: $secondary-font-family;
+                text-shadow: $trident-text-shadow;
+                font-size: 40px;
+                font-weight: 900;
+                line-height: 0.89;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                margin-top: 30px;
+                line-height: 1.4;
+                margin-bottom: 40px;
             }
         }
     }

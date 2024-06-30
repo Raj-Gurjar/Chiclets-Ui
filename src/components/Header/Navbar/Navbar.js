@@ -5,12 +5,14 @@ import NavbarBig2 from "./NavbarBig2";
 import NavbarSmall from "./NavbarSmall";
 import "./Navbar.scss";
 
+
 export default function Navbar() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
   return (
-    <div>
+    <div className="navbar">
+   
       <div className="navbar-big">
         {isHomePage ? <NavbarBig /> : <NavbarBig2 />}
       </div>

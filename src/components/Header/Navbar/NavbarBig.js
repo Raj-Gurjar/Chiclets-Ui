@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import "./Navbar.scss";
 import { Link, useLocation } from "react-router-dom";
+import star_01 from "../../../assets/Backgrounds/star01.png"
 
 export default function NavbarBig({ flag }) {
   const location = useLocation();
@@ -9,6 +10,9 @@ export default function NavbarBig({ flag }) {
 
   return (
     <div className="navbar-big-container">
+      <div className="star-01">
+        <img src={star_01} alt="" />
+      </div>
       <div className="nav-product-btn">
         <Link to="/products">
           <span>Products</span>

@@ -6,16 +6,11 @@ import { Link } from "react-router-dom";
 import VideoButton from "../../components/UI/Buttons/VideoButton";
 import VideoModal from "../../components/Modal/VideoModal";
 
-
 export default function HomeFeature() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
+  const toggleModal = () => {
+    setModalIsOpen(!modalIsOpen);
   };
 
   return (
@@ -23,7 +18,7 @@ export default function HomeFeature() {
       <div className="homeFeatures-img">
         <img src={img} alt="img" />
         <div className="play-btn-container">
-          <Link to="" onClick={openModal}>
+          <Link to="" onClick={toggleModal}>
             <VideoButton />
           </Link>
         </div>
@@ -75,7 +70,7 @@ export default function HomeFeature() {
 
       <VideoModal
         isOpen={modalIsOpen}
-        closeModal={closeModal}
+        closeModal={toggleModal}
         videoId="YOUR_VIDEO_ID" // Replace with the actual video ID
       />
     </div>

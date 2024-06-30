@@ -12,11 +12,9 @@ const HomePick = () => (
     <div className="homePick-product-cards">
       {ProductData?.slice(0, 3)?.map((product) => (
         <div key={product?.id}>
-          <Link to={`/products/${product.id}`}>
-            <div>
-              <ProductCard1 data={product} btn_name={"Buy Now"}/>
-            </div>
-          </Link>
+          <div>
+            <ProductCard1 data={product} btn_name={"Buy Now"} />
+          </div>
         </div>
       ))}
     </div>

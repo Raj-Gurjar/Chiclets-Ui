@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="home-main1 pb-[30px]">
       <div className="home-main">
-        <div>
+        <div className="header2">
           <Navbar />
         </div>
         <div>
@@ -46,7 +46,7 @@ export default function Home() {
           <HomePick2 />
         </div>
       </div>
-      <div className="px-[20px]">
+      <div className="px-[25px] ">
         <Footer pt={"150px"} />
       </div>
     </div>

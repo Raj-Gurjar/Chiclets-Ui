@@ -70,26 +70,25 @@ export default function ProductDetails() {
         <div>
           <Header />
         </div>
-        <div>
+        <div className=" mt-[-2%]">
           <ProductDetailsRoute data={currentProduct?.name} />
-        </div>
+          <div className="productDetailCard-outer">
+            <ProductDetailCard productData={currentProduct} />
 
-        <div className="productDetailCard-outer">
-          <ProductDetailCard productData={currentProduct} />
+            <div className="productDetail-arrows">
+              <div
+                className="productDetail-back-arrow"
+                onClick={handleBackArrowClick}
+              >
+                <IoIosArrowBack />
+              </div>
 
-          <div className="productDetail-arrows">
-            <div
-              className="productDetail-back-arrow"
-              onClick={handleBackArrowClick}
-            >
-              <IoIosArrowBack />
-            </div>
-
-            <div
-              className="productDetail-forward-arrow"
-              onClick={handleForwardArrowClick}
-            >
-              <IoIosArrowForward />
+              <div
+                className="productDetail-forward-arrow"
+                onClick={handleForwardArrowClick}
+              >
+                <IoIosArrowForward />
+              </div>
             </div>
           </div>
         </div>
