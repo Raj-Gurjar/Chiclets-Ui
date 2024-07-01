@@ -20,8 +20,8 @@ export default function ProductDetails({ setbg }) {
   const [currentProductId, setCurrentProductId] = useState(initialProductId);
 
   useEffect(() => {
-      setbg(productData[currentIndex].colorBg || "transparent");
-   }, [])
+    setbg(productData[currentIndex].colorBg || "transparent");
+  }, []);
 
   //!------ Carousel Logic
   const currentIndex = productData.findIndex(
@@ -90,8 +90,9 @@ export default function ProductDetails({ setbg }) {
 
             <div className="productDetail-arrows">
               <div
-                className={`bars back-bar cursor-pointer ${currentIndex === 0 ? "disabled" : ""
-                  }`}
+                className={`bars back-bar cursor-pointer ${
+                  currentIndex === 0 ? "disabled" : ""
+                }`}
                 onClick={handleBackArrowClick}
                 style={{
                   pointerEvents: currentIndex === 0 ? "none" : "auto",
@@ -99,20 +100,18 @@ export default function ProductDetails({ setbg }) {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width=""
-                  height=""
-                  fill="none"
-                  viewBox="0 0 24 490"
+                  viewBox="0 0 40 491"
                   className="svg-bar-1"
                 >
                   <path
+                    d="M 36 486 a 4 4 0 0 1 -4 4 c -14.327 0 -32 -14.327 -32 -32 V 296.512 a 31.999 31.999 0 0 1 4.703 -16.699 l 11.08 -18.114 a 31.998 31.998 0 0 0 0 -33.398 l -11.08 -18.114 A 31.999 31.999 0 0 1 0 193.488 V 32 C 0 14.327 14.327 0 32 0 m 0 0 L 40 0 v 491.02 L 32.032 490.51 Z"
                     fill="#fff"
-                    d="M23.5 486a4 4 0 0 1-4 4C1.827 490 1 475.673 1 458V296.512a31.999 31.999 0 0 1 4.703-16.699l11.08-18.114a31.998 31.998 0 0 0 0-33.398l-11.08-18.114A31.999 31.999 0 0 1 1 193.488V32C1 14.327-.673 0 17 0c2.21 0 6.5 1.79 6.5 4v482Z"
-                  ></path>
+                  />
                 </svg>
                 <div
-                  className={`productDetail-back-arrow ${currentIndex === 0 ? "disabled" : ""
-                    }`}
+                  className={`productDetail-back-arrow ${
+                    currentIndex === 0 ? "disabled" : ""
+                  }`}
                   onClick={handleBackArrowClick}
                   style={{
                     pointerEvents: currentIndex === 0 ? "none" : "auto",
@@ -123,8 +122,9 @@ export default function ProductDetails({ setbg }) {
               </div>
 
               <div
-                className={`bars front-bar cursor-pointer ${currentIndex === productData.length - 1 ? "disabled" : ""
-                  }`}
+                className={`bars front-bar cursor-pointer ${
+                  currentIndex === productData.length - 1 ? "disabled" : ""
+                }`}
                 onClick={handleForwardArrowClick}
                 style={{
                   pointerEvents:
@@ -133,20 +133,18 @@ export default function ProductDetails({ setbg }) {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width=""
-                  height=""
-                  fill="none"
-                  viewBox="0 0 24 490"
-                  class="svg-bar-2"
+                  viewBox="0 0 40 491"
+                  className="svg-bar-2"
                 >
                   <path
+                    d="M 36 486 a 4 4 0 0 1 -4 4 c -14.327 0 -32 -14.327 -32 -32 V 296.512 a 31.999 31.999 0 0 1 4.703 -16.699 l 11.08 -18.114 a 31.998 31.998 0 0 0 0 -33.398 l -11.08 -18.114 A 31.999 31.999 0 0 1 0 193.488 V 32 C 0 14.327 14.327 0 32 0 m 0 0 L 40 0 v 491.02 L 32.032 490.51 Z"
                     fill="#fff"
-                    d="M23.5 486a4 4 0 0 1-4 4C1.827 490 1 475.673 1 458V296.512a31.999 31.999 0 0 1 4.703-16.699l11.08-18.114a31.998 31.998 0 0 0 0-33.398l-11.08-18.114A31.999 31.999 0 0 1 1 193.488V32C1 14.327-.673 0 17 0c2.21 0 6.5 1.79 6.5 4v482Z"
-                  ></path>
+                  />
                 </svg>
                 <div
-                  className={`productDetail-forward-arrow ${currentIndex === productData.length - 1 ? "disabled" : ""
-                    }`}
+                  className={`productDetail-forward-arrow ${
+                    currentIndex === productData.length - 1 ? "disabled" : ""
+                  }`}
                   onClick={handleForwardArrowClick}
                   style={{
                     pointerEvents:

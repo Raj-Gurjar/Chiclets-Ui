@@ -9,14 +9,6 @@ export default function RandomFigures() {
       <div className="triangle">
         <img src={triangle_img} alt="triangle-bg" className="" />
       </div>
-
-      <div className="star-1">
-        <img src={star1} alt="triangle-bg" className="" />
-      </div>
-
-      <div className="star-2">
-        <img src={star2} alt="triangle-bg" className="" />
-      </div>
     </div>
   );
 }

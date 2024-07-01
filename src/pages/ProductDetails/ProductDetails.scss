@@ -1,8 +1,8 @@
 @import "../../variables";
 
 .productDetails-container1 {
+    max-width: 1280px;
     padding-bottom: 30px;
-    max-width: 1380px;
 }
 .productDetails-container {
     padding: 0px 75px 20px;
@@ -207,14 +207,14 @@
             justify-content: center;
             align-items: center;
             border-radius: 150px;
-            
-            padding: 10px;
+
+            // padding: 10px;
 
             width: 5%;
             position: relative;
         }
         .svg-bar-1 {
-            transform: scaleX(2)  rotate(180deg) ;
+            transform: rotate(180deg);
             // background-color: #ffe602;
             height: 400px;
         }
@@ -222,23 +222,23 @@
             // background-color: #ffe602;
             height: 400px;
 
-            transform: scaleX(2);
+            // transform: scaleX(2);
         }
 
         .back-bar {
-            margin-left: -7.9%;
+            margin-left: -9%;
             // transform: scaleX(-1);
             // background-color: #ffe602;
         }
 
         .front-bar {
-            margin-right: -7.9%;
+            margin-right: -9%;
             // background-color: #ffe602;
         }
 
         .productDetail-back-arrow {
             // background-color: rgb(255, 0, 0);
-            left: 40%;
+            left: 50%;
             position: absolute;
             border-radius: 60%;
 
@@ -246,6 +246,7 @@
             transition: all 0.3s ease-in;
             cursor: pointer;
             padding-right: 5px;
+            font-size: 35px;
 
             &:hover {
                 transform: translateX(-5px) scale(1.1);
@@ -255,11 +256,12 @@
         .productDetail-forward-arrow {
             // background-color: red;
             border-radius: 60%;
+            font-size: 35px;
             padding: 10px 0px;
             transition: all 0.3s ease-in;
             cursor: pointer;
             padding-left: 5px;
-            right: 40%;
+            right: 50%;
             position: absolute;
             // background-color: green;
             // float: right;
@@ -295,30 +297,10 @@
     .productDetailCard-outer {
         .productDetail-arrows {
             // background-color: red;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            height: 400px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 40px;
-            padding: 5px;
 
             .bars {
-                // background-color: white;
-                // height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 30px;
-
-                width: 5%;
-                position: relative;
             }
             .svg-bar-1 {
-               
                 // background-color: #ffe602;
                 height: 400px;
             }
@@ -339,42 +321,10 @@
             }
 
             .productDetail-back-arrow {
-                // background-color: rgb(255, 0, 0);
-                left: 40%;
-                position: absolute;
-                border-radius: 60%;
-
-                padding: 10px 0px;
-                transition: all 0.3s ease-in;
-                cursor: pointer;
-                padding-right: 5px;
-
-                &:hover {
-                    transform: translateX(-5px) scale(1.1);
-                }
             }
 
             .productDetail-forward-arrow {
-                // background-color: red;
-                border-radius: 60%;
-                padding: 10px 0px;
-                transition: all 0.3s ease-in;
-                cursor: pointer;
-                padding-left: 5px;
-                right: 40%;
-                position: absolute;
-                // background-color: green;
-                // float: right;
-                &:hover {
-                    transform: translateX(5px) scale(1.1);
-                }
             }
-        }
-
-        .disabled {
-            opacity: 0;
-            cursor: not-allowed;
-            // display: none;
         }
     }
 }
@@ -512,82 +462,31 @@
 
             transform: translateY(-50%);
             width: 100%;
-            // height: 400px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 40px;
+
             padding: 5px;
 
             .bars {
-                // background-color: white;
-                // height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 30px;
-
-                width: 5%;
-                position: relative;
             }
             .svg-bar-1 {
-    
-                // background-color: #ffe602;
                 height: 350px;
             }
             .svg-bar-2 {
-                // background-color: #ffe602;
                 height: 350px;
             }
 
             .back-bar {
                 margin-left: -5%;
-                // transform: scaleX(-1);
-                // background-color: #ffe602;
             }
 
             .front-bar {
                 margin-right: -5%;
-                // background-color: #ffe602;
             }
 
             .productDetail-back-arrow {
-                // background-color: rgb(255, 0, 0);
-                left: 40%;
-                position: absolute;
-                border-radius: 60%;
-
-                padding: 10px 0px;
-                transition: all 0.3s ease-in;
-                cursor: pointer;
-                padding-right: 5px;
-
-                &:hover {
-                    transform: translateX(-5px) scale(1.1);
-                }
             }
 
             .productDetail-forward-arrow {
-                // background-color: red;
-                border-radius: 60%;
-                padding: 10px 0px;
-                transition: all 0.3s ease-in;
-                cursor: pointer;
-                padding-left: 5px;
-                right: 40%;
-                position: absolute;
-                // background-color: green;
-                // float: right;
-                &:hover {
-                    transform: translateX(5px) scale(1.1);
-                }
             }
-        }
-
-        .disabled {
-            opacity: 0;
-            cursor: not-allowed;
-            // display: none;
         }
     }
 }
@@ -598,85 +497,31 @@
             position: absolute;
             top: 76%;
 
-            transform: translateY(-50%);
-            width: 100%;
-            // height: 400px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 40px;
-            padding: 5px;
-
             .bars {
-                // background-color: white;
-                // height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 30px;
                 padding: 0px;
                 width: 5%;
-                position: relative;
             }
             .svg-bar-1 {
-             
-                // background-color: #ffe602;
                 height: 330px;
-                transform: scaleX(2)  rotate(180deg) ;
+                transform: rotate(180deg);
             }
             .svg-bar-2 {
-                // background-color: #ffe602;
                 height: 330px;
             }
 
             .back-bar {
                 margin-left: -6%;
-                // transform: scaleX(-1);
-                // background-color: #ffe602;
             }
 
             .front-bar {
                 margin-right: -6%;
-                // background-color: #ffe602;
             }
 
             .productDetail-back-arrow {
-                // background-color: rgb(255, 0, 0);
-                left: 40%;
-                position: absolute;
-                border-radius: 60%;
-
-                padding: 10px 0px;
-                transition: all 0.3s ease-in;
-                cursor: pointer;
-                padding-right: 5px;
-
-                &:hover {
-                    transform: translateX(-5px) scale(1.1);
-                }
             }
 
             .productDetail-forward-arrow {
-                // background-color: red;
-                border-radius: 60%;
-                padding: 10px 0px;
-                transition: all 0.3s ease-in;
-                cursor: pointer;
-                padding-left: 5px;
-                right: 40%;
-                position: absolute;
-                // background-color: green;
-                // float: right;
-                &:hover {
-                    transform: translateX(5px) scale(1.1);
-                }
             }
-        }
-
-        .disabled {
-            opacity: 0;
-            cursor: not-allowed;
-            // display: none;
         }
     }
 }
@@ -686,71 +531,23 @@
             position: absolute;
             top: 74%;
 
-            transform: translateY(-50%);
-            width: 100%;
-            // height: 400px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 40px;
             padding: 5px;
 
             .bars {
-              
             }
             .svg-bar-1 {
-                // transform: rotate(180deg);
-                // background-color: #ffe602;
-                transform: scaleX(2)  rotate(180deg) ;
                 height: 400px;
             }
             .svg-bar-2 {
-                // background-color: #ffe602;
                 height: 400px;
-                transform: scaleX(2);
             }
 
             .back-bar {
                 margin-left: -7%;
-                // transform: scaleX(-1);
-                // background-color: #ffe602;
             }
 
             .front-bar {
                 margin-right: -7%;
-                // background-color: #ffe602;
-            }
-
-            .productDetail-back-arrow {
-                // background-color: rgb(255, 0, 0);
-                left: 40%;
-                position: absolute;
-                border-radius: 60%;
-
-                padding: 10px 0px;
-                transition: all 0.3s ease-in;
-                cursor: pointer;
-                padding-right: 5px;
-
-                &:hover {
-                    transform: translateX(-5px) scale(1.1);
-                }
-            }
-
-            .productDetail-forward-arrow {
-                // background-color: red;
-                border-radius: 60%;
-                padding: 10px 0px;
-                transition: all 0.3s ease-in;
-                cursor: pointer;
-                padding-left: 5px;
-                right: 40%;
-                position: absolute;
-                // background-color: green;
-                // float: right;
-                &:hover {
-                    transform: translateX(5px) scale(1.1);
-                }
             }
         }
     }
@@ -856,39 +653,22 @@
 
     .productDetailCard-outer {
         .productDetail-arrows {
-            position: absolute;
             top: 68%;
 
-            transform: translateY(-50%);
-            width: 100%;
-            // height: 400px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             font-size: 40px;
             padding: 5px;
 
             .bars {
-                // background-color: white;
-                // height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 30px;
-
                 width: 5%;
-                position: relative;
             }
             .svg-bar-1 {
-                // transform: rotate(180deg);
-                // background-color: #ff0202;
                 height: 300px;
-                transform: scale(2,2) rotate(180deg);
+                transform: scale(2, 2) rotate(180deg);
             }
             .svg-bar-2 {
                 // background-color: #ff0202;
                 height: 300px;
-                transform: scale(2,2);
+                transform: scale(2, 2);
             }
 
             .back-bar {

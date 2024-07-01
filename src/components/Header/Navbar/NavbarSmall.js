@@ -39,7 +39,7 @@ export default function NavbarSmall() {
 
         <div className="menu-links">
           <div className="bold-links">
-          <div>
+            <div>
               <Link to="/">Home</Link>
             </div>
             <div>

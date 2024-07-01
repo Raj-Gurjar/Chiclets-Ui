@@ -8,10 +8,13 @@ import VideoModal from "../../components/Modal/VideoModal";
 export default function HomeTopSection() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const toggleModal = () => {
+  const toggleModal = (event) => {
+    event.preventDefault();
     setModalIsOpen(!modalIsOpen);
   };
+
   const navigate = useNavigate();
+
   return (
     <div className="home-top-container">
       <div className="home-img-container">
@@ -19,7 +22,7 @@ export default function HomeTopSection() {
           <img src={home_bg} alt="home-img" />
         </div>
         <div className="video-btn-container-1">
-          <Link to="" onClick={toggleModal}>
+          <Link to="#" onClick={toggleModal}>
             <VideoButton />
           </Link>
         </div>

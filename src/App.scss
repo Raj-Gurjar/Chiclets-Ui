@@ -4,15 +4,10 @@
 @tailwind utilities;
 
 .app-cls {
-    // background-color: #0358d6;
     color: white;
     position: relative;
 
     .app-cls-inside {
-        // display: flex;
-        // justify-content: center;
-        // // max-width: 1920px;
-        // align-items: center;
         background-color: #0358d6;
     }
 }
@@ -21,8 +16,6 @@
 // }
 
 .header2 {
-    // background-color: red;
-    // padding: 10px;
     position: relative;
 }
 
@@ -35,18 +28,16 @@
 
 @media (min-width: 1280px) {
     .app-cls {
-        // background-color: #0358d6;
         color: white;
         position: relative;
-        // padding-bottom: 20px;
-        // padding-bottom: 20px;
+
         display: flex;
         justify-content: center;
 
         .app-cls-inside {
             display: flex;
             justify-content: center;
-            // max-width: 1920px;
+
             align-items: center;
         }
     }
