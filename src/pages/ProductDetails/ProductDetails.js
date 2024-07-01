@@ -34,14 +34,17 @@ export default function ProductDetails() {
   };
 
   const handleBackArrowClick = () => {
-    const newIndex =
-      (currentIndex - 1 + productData.length) % productData.length;
-    navigateToProduct(productData[newIndex].id);
+    if (currentIndex > 0) {
+      const newIndex = currentIndex - 1;
+      navigateToProduct(productData[newIndex].id);
+    }
   };
 
   const handleForwardArrowClick = () => {
-    const newIndex = (currentIndex + 1) % productData.length;
-    navigateToProduct(productData[newIndex].id);
+    if (currentIndex < productData.length - 1) {
+      const newIndex = currentIndex + 1;
+      navigateToProduct(productData[newIndex].id);
+    }
   };
 
   const currentProduct = productData.find(
@@ -80,18 +83,59 @@ export default function ProductDetails() {
             <ProductDetailCard productData={currentProduct} />
 
             <div className="productDetail-arrows">
-              <div
-                className="productDetail-back-arrow"
-                onClick={handleBackArrowClick}
-              >
-                <IoIosArrowBack />
+              <div className="bars back-bar">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=""
+                  height=""
+                  fill="none"
+                  viewBox="0 0 24 490"
+                  className="svg-bar-1"
+                >
+                  <path
+                    fill="#fff"
+                    d="M23.5 486a4 4 0 0 1-4 4C1.827 490 1 475.673 1 458V296.512a31.999 31.999 0 0 1 4.703-16.699l11.08-18.114a31.998 31.998 0 0 0 0-33.398l-11.08-18.114A31.999 31.999 0 0 1 1 193.488V32C1 14.327-.673 0 17 0c2.21 0 6.5 1.79 6.5 4v482Z"
+                  ></path>
+                </svg>
+                <div
+                  className={`productDetail-back-arrow ${
+                    currentIndex === 0 ? "disabled" : ""
+                  }`}
+                  onClick={handleBackArrowClick}
+                  style={{
+                    pointerEvents: currentIndex === 0 ? "none" : "auto",
+                  }}
+                >
+                  <IoIosArrowBack />
+                </div>
               </div>
 
-              <div
-                className="productDetail-forward-arrow"
-                onClick={handleForwardArrowClick}
-              >
-                <IoIosArrowForward />
+              <div className="bars front-bar">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=""
+                  height=""
+                  fill="none"
+                  viewBox="0 0 24 490"
+                  class="svg-bar-2"
+                >
+                  <path
+                    fill="#fff"
+                    d="M23.5 486a4 4 0 0 1-4 4C1.827 490 1 475.673 1 458V296.512a31.999 31.999 0 0 1 4.703-16.699l11.08-18.114a31.998 31.998 0 0 0 0-33.398l-11.08-18.114A31.999 31.999 0 0 1 1 193.488V32C1 14.327-.673 0 17 0c2.21 0 6.5 1.79 6.5 4v482Z"
+                  ></path>
+                </svg>
+                <div
+                  className={`productDetail-forward-arrow ${
+                    currentIndex === productData.length - 1 ? "disabled" : ""
+                  }`}
+                  onClick={handleForwardArrowClick}
+                  style={{
+                    pointerEvents:
+                      currentIndex === productData.length - 1 ? "none" : "auto",
+                  }}
+                >
+                  <IoIosArrowForward />
+                </div>
               </div>
             </div>
           </div>
