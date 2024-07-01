@@ -212,13 +212,15 @@
             position: relative;
         }
         .svg-bar-1 {
-            transform: rotate(180deg);
+            transform: scaleX(1.4)  rotate(180deg) ;
             // background-color: #ffe602;
             height: 400px;
         }
         .svg-bar-2 {
             // background-color: #ffe602;
             height: 400px;
+
+            transform: scaleX(1.4);
         }
 
         .back-bar {
@@ -314,7 +316,7 @@
                 position: relative;
             }
             .svg-bar-1 {
-                transform: rotate(180deg);
+               
                 // background-color: #ffe602;
                 height: 400px;
             }
@@ -527,7 +529,7 @@
                 position: relative;
             }
             .svg-bar-1 {
-                transform: rotate(180deg);
+    
                 // background-color: #ffe602;
                 height: 350px;
             }
@@ -884,12 +886,12 @@
                 // transform: rotate(180deg);
                 // background-color: #ff0202;
                 height: 300px;
-                transform: scaleY(2) rotate(180deg);
+                transform: scale(1.4,2) rotate(180deg);
             }
             .svg-bar-2 {
                 // background-color: #ff0202;
                 height: 300px;
-                transform: scaleY(2);
+                transform: scale(1.4,2);
             }
 
             .back-bar {
