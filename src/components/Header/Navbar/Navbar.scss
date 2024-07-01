@@ -7,7 +7,7 @@
 
 .navbar-big-container {
     background-color: #022e70;
-    z-index: 999;
+    z-index: 900;
     position: absolute;
     top: -8px;
     right: 3%;
@@ -97,7 +97,7 @@
 
 .navbar-big-container2 {
     background-color: #022e70;
-    z-index: 999;
+    z-index: 900;
     // position: absolute;
     // top: -8px;
     // right: 8%;
@@ -143,7 +143,7 @@
 
     .navbar-small-btn {
         background-color: #022e70;
-        z-index: 999;
+        z-index: 900;
         position: fixed;
         top: -15px;
         right: 10px;
@@ -166,7 +166,7 @@
     .small-menu-container {
         background-color: #022e70;
         position: fixed;
-        z-index: 998;
+        z-index: 900;
         top: 0;
         left: 0;
         width: 100%;

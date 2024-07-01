@@ -6,22 +6,15 @@
     position: relative;
     padding-right: 20px;
     z-index: 9;
-    // background-color: red;
-    // margin-bottom: 150px;
-    // background-color: yellow;
 }
 
 .logo-container {
     border-radius: 100%;
     position: absolute;
     top: 10%;
-    // background-color: red;
-    // // left: 50%;
-    // transform: translate(-50%, -50%);
-
+    
     z-index: 99;
-    // background-color: white;
-
+  
     img {
         // background-color: white;
         object-fit: contain;
