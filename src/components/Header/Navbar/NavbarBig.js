@@ -13,15 +13,15 @@ export default function NavbarBig({ flag }) {
       <div className="star-01">
         <img src={star_01} alt="" />
       </div>
-      <div className="nav-product-btn">
-        <Link to="/products">
+      <Link to="/products">
+        <div className="nav-product-btn">
           <span>Products</span>
-        </Link>
 
-        <span1>
-          <FaArrowRight />
-        </span1>
-      </div>
+          <span1>
+            <FaArrowRight />
+          </span1>
+        </div>
+      </Link>
       <div className="nav-other-links">
         <h3>FAQ</h3>
         <h3>History</h3>

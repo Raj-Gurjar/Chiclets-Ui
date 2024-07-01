@@ -39,6 +39,9 @@ export default function NavbarSmall() {
 
         <div className="menu-links">
           <div className="bold-links">
+          <div>
+              <Link to="/">Home</Link>
+            </div>
             <div>
               <Link to="/products">Products</Link>
             </div>
