@@ -83,7 +83,15 @@ export default function ProductDetails() {
             <ProductDetailCard productData={currentProduct} />
 
             <div className="productDetail-arrows">
-              <div className="bars back-bar">
+              <div
+                className={`bars back-bar ${
+                  currentIndex === 0 ? "disabled" : ""
+                }`}
+                onClick={handleBackArrowClick}
+                style={{
+                  pointerEvents: currentIndex === 0 ? "none" : "auto",
+                }}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width=""
@@ -110,7 +118,16 @@ export default function ProductDetails() {
                 </div>
               </div>
 
-              <div className="bars front-bar">
+              <div
+                className={`bars front-bar ${
+                  currentIndex === productData.length - 1 ? "disabled" : ""
+                }`}
+                onClick={handleForwardArrowClick}
+                style={{
+                  pointerEvents:
+                    currentIndex === productData.length - 1 ? "none" : "auto",
+                }}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width=""

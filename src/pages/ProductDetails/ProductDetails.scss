@@ -206,13 +206,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 30px;
+            border-radius: 150px;
+            
+            padding: 10px;
 
             width: 5%;
             position: relative;
         }
         .svg-bar-1 {
-            transform: scaleX(1.4)  rotate(180deg) ;
+            transform: scaleX(2)  rotate(180deg) ;
             // background-color: #ffe602;
             height: 400px;
         }
@@ -220,17 +222,17 @@
             // background-color: #ffe602;
             height: 400px;
 
-            transform: scaleX(1.4);
+            transform: scaleX(2);
         }
 
         .back-bar {
-            margin-left: -8.2%;
+            margin-left: -7.9%;
             // transform: scaleX(-1);
             // background-color: #ffe602;
         }
 
         .front-bar {
-            margin-right: -8.2%;
+            margin-right: -7.9%;
             // background-color: #ffe602;
         }
 
@@ -612,18 +614,19 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 30px;
-
+                padding: 0px;
                 width: 5%;
                 position: relative;
             }
             .svg-bar-1 {
-                transform: rotate(180deg);
+             
                 // background-color: #ffe602;
-                height: 375px;
+                height: 330px;
+                transform: scaleX(2)  rotate(180deg) ;
             }
             .svg-bar-2 {
                 // background-color: #ffe602;
-                height: 375px;
+                height: 330px;
             }
 
             .back-bar {
@@ -693,24 +696,18 @@
             padding: 5px;
 
             .bars {
-                // background-color: white;
-                // height: 400px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 30px;
-
-                width: 5%;
-                position: relative;
+              
             }
             .svg-bar-1 {
-                transform: rotate(180deg);
+                // transform: rotate(180deg);
                 // background-color: #ffe602;
-                height: 450px;
+                transform: scaleX(2)  rotate(180deg) ;
+                height: 400px;
             }
             .svg-bar-2 {
                 // background-color: #ffe602;
-                height: 450px;
+                height: 400px;
+                transform: scaleX(2);
             }
 
             .back-bar {
@@ -886,12 +883,12 @@
                 // transform: rotate(180deg);
                 // background-color: #ff0202;
                 height: 300px;
-                transform: scale(1.4,2) rotate(180deg);
+                transform: scale(2,2) rotate(180deg);
             }
             .svg-bar-2 {
                 // background-color: #ff0202;
                 height: 300px;
-                transform: scale(1.4,2);
+                transform: scale(2,2);
             }
 
             .back-bar {
