@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./ProductDetails.scss";
 import ProductDetailsRoute from "./ProductDetailsRoute";
@@ -12,12 +12,16 @@ import productData from "../../Data/ProductsData.json";
 import Header from "../../components/Header/Header";
 import star_img from "../../assets/Backgrounds/star01.png";
 
-export default function ProductDetails() {
+export default function ProductDetails({ setbg }) {
   const location = useLocation();
   const navigate = useNavigate();
 
   const initialProductId = location.state?.product?.id || 1;
   const [currentProductId, setCurrentProductId] = useState(initialProductId);
+
+  useEffect(() => {
+      setbg(productData[currentIndex].colorBg || "transparent");
+   }, [])
 
   //!------ Carousel Logic
   const currentIndex = productData.findIndex(
@@ -36,6 +40,7 @@ export default function ProductDetails() {
   const handleBackArrowClick = () => {
     if (currentIndex > 0) {
       const newIndex = currentIndex - 1;
+      setbg(productData[newIndex].colorBg || "transparent");
       navigateToProduct(productData[newIndex].id);
     }
   };
@@ -43,6 +48,7 @@ export default function ProductDetails() {
   const handleForwardArrowClick = () => {
     if (currentIndex < productData.length - 1) {
       const newIndex = currentIndex + 1;
+      setbg(productData[newIndex].colorBg || "transparent");
       navigateToProduct(productData[newIndex].id);
     }
   };
@@ -84,9 +90,8 @@ export default function ProductDetails() {
 
             <div className="productDetail-arrows">
               <div
-                className={`bars back-bar ${
-                  currentIndex === 0 ? "disabled" : ""
-                }`}
+                className={`bars back-bar cursor-pointer ${currentIndex === 0 ? "disabled" : ""
+                  }`}
                 onClick={handleBackArrowClick}
                 style={{
                   pointerEvents: currentIndex === 0 ? "none" : "auto",
@@ -106,9 +111,8 @@ export default function ProductDetails() {
                   ></path>
                 </svg>
                 <div
-                  className={`productDetail-back-arrow ${
-                    currentIndex === 0 ? "disabled" : ""
-                  }`}
+                  className={`productDetail-back-arrow ${currentIndex === 0 ? "disabled" : ""
+                    }`}
                   onClick={handleBackArrowClick}
                   style={{
                     pointerEvents: currentIndex === 0 ? "none" : "auto",
@@ -119,9 +123,8 @@ export default function ProductDetails() {
               </div>
 
               <div
-                className={`bars front-bar ${
-                  currentIndex === productData.length - 1 ? "disabled" : ""
-                }`}
+                className={`bars front-bar cursor-pointer ${currentIndex === productData.length - 1 ? "disabled" : ""
+                  }`}
                 onClick={handleForwardArrowClick}
                 style={{
                   pointerEvents:
@@ -142,9 +145,8 @@ export default function ProductDetails() {
                   ></path>
                 </svg>
                 <div
-                  className={`productDetail-forward-arrow ${
-                    currentIndex === productData.length - 1 ? "disabled" : ""
-                  }`}
+                  className={`productDetail-forward-arrow ${currentIndex === productData.length - 1 ? "disabled" : ""
+                    }`}
                   onClick={handleForwardArrowClick}
                   style={{
                     pointerEvents:

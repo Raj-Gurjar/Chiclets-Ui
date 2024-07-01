@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.scss";
 import HomeTopSection from "./HomeTopSection";
 import HomePick from "./HomePick";
@@ -14,7 +14,12 @@ import HomeFeature from "./HomeFeature";
 import Navbar from "../../components/Header/Navbar/Navbar";
 import star_img from "../../assets/Backgrounds/star01.png";
 
-export default function Home() {
+export default function Home({ setbg }) {
+
+  useEffect(() => {
+    setbg("#0358d6")
+  },[])
+
   return (
     <div className="home-main1 pb-[30px]">
       <div className="home-main">

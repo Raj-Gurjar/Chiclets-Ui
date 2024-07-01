@@ -1,8 +1,8 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useSearchParams } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 
 import { ToastContainer } from "react-toastify";
@@ -32,19 +32,21 @@ function App() {
     });
   }, []);
 
+  const [bg, setbg] = useState("#0358d6");
+
   return (
-    <div className="app-cls">
-  
+    <div className="app-cls" style={{ background: bg }}>
+
       <div className="app-cls-inside">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home setbg={setbg}/>} />
 
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<Products setbg={setbg} />} />
           {/* <Route path="/pd" element={<ProductDetails />} /> */}
-          <Route path="/products/:productId" element={<Products />} />
+          <Route path="/products/:productId" element={<Products setbg={setbg} />} />
           <Route
             path="/product-details/:productId"
-            element={<ProductDetails />}
+            element={<ProductDetails setbg={setbg} />}
           />
 
           <Route path="*" element={<Error />} />

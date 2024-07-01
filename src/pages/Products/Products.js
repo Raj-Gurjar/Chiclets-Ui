@@ -8,7 +8,7 @@ import { useLocation, useParams } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import star_img from "../../assets/Backgrounds/star01.png";
 
-const Products = () => {
+const Products = ({ setbg }) => {
   const location = useLocation();
   const { productId } = useParams();
 
@@ -29,6 +29,7 @@ const Products = () => {
   }, []);
 
   useEffect(() => {
+    setbg("#0358d6")
     if (productId) {
       scrollToProduct(productId);
     } else if (location.hash) {
