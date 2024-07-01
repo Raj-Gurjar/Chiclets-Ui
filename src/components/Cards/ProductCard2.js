@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function ProductCard2({ data }) {
   return (
     <div className="product-card2-container">
-      <div className="product-img-container">
+      <div className="product-img-container-2">
         <img src={data?.product_img} alt={`${data?.name}-img`} />
       </div>
 
