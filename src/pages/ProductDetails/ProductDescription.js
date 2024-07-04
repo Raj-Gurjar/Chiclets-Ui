@@ -24,7 +24,7 @@ export default function ProductDescription({ data }) {
         </div>
         <div>
           <a href={moreInfo} target="_blank">
-            <h4>More Product Info</h4>
+            <h4>More product info</h4>
           </a>
         </div>
       </div>
