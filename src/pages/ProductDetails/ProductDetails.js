@@ -83,7 +83,7 @@ export default function ProductDetails({ setbg }) {
         <div>
           <Header />
         </div>
-        <div className=" mt-[-2%]">
+        <div className=" mt-[-3%]">
           <ProductDetailsRoute data={currentProduct?.name} />
           <div className="productDetailCard-outer">
             <ProductDetailCard productData={currentProduct} />

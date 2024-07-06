@@ -299,7 +299,7 @@
     }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1289px) {
     .productDetails-container {
         padding: 0px 30px 20px;
     }
@@ -672,13 +672,14 @@
                 width: 5%;
             }
             .svg-bar-1 {
-                height: 300px;
-                transform: scale(2, 2) rotate(180deg);
+                height: 450px;
+                // background-color: red;
+                transform: scale(2, 2.8) rotate(180deg);
             }
             .svg-bar-2 {
                 // background-color: #ff0202;
-                height: 300px;
-                transform: scale(2, 2);
+                height: 450px;
+                transform: scale(2, 2.8);
             }
 
             .back-bar {

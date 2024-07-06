@@ -20,7 +20,7 @@ export default function ProductDetailCard({ productData }) {
 
 
   return (
-    <div className="productDetails-container-inner">
+    <div className="productDetails-container-inner ">
       
       <div className="productDetails-img-col">
         <img

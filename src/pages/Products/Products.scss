@@ -7,6 +7,7 @@
 .products-container {
     // padding-top: 200px;
     padding: 0px 75px 25px;
+    // background-color: rgb(0, 221, 255);
 
     // background-color: red;
     a {
@@ -21,7 +22,7 @@
             font-weight: 800;
             // padding-left: 20px;
             text-shadow: $trident-text-shadow;
-            font-family: $base-font-color;
+            font-family: $secondary-font-family;
             // background-color: red;
         }
     }
@@ -37,10 +38,10 @@
 
         .product-category-wrapper {
             display: flex;
-            justify-content: space-between;
+            justify-content: left;
             text-align: left;
             width: 65%;
-            column-gap: 5px;
+            column-gap: 20px;
             // background-color: gold;
             flex-wrap: wrap;
             row-gap: 10px;
@@ -112,11 +113,33 @@
 
 //!----- Responsive ---------
 
+@media (max-width: 1280px) {
+    .products-container {
+        // padding-top: 200px;
+        padding: 0px 25px 25px;
+        // background-color: rgb(0, 255, 17);
+
+        .product-heading {
+            // background-color: red;
+            margin-top: -70px;
+            h1 {
+                font-size: 56px;
+                font-weight: 800;
+                // padding-left: 20px;
+                text-shadow: $trident-text-shadow;
+                font-family: $base-font-color;
+                // background-color: red;
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .products-container {
-        padding: 0px 75px 25px;
+        padding: 0px 35px 25px;
+        // background-color: red;
         .product-heading {
-            margin-top: 25%;
+            margin-top: 5%;
             h1 {
                 font-size: 56px;
                 font-weight: 800;
