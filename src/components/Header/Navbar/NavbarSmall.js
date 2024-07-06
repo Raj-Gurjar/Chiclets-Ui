@@ -10,13 +10,11 @@ export default function NavbarSmall() {
   const handleMenuToggle = () => {
     setToggleMenu(!toggleMenu);
   };
-  console.log("cc", toggleMenu);
 
   useEffect(() => {
     AOS.init({
       duration: 2900,
       debounceDelay: 50,
-
       once: false,
       mirror: true,
     });
@@ -25,13 +23,13 @@ export default function NavbarSmall() {
   return (
     <div className="navbar-small">
       <div className={`${!toggleMenu ? "navbar-small-btn" : "hidden"}`}>
-        <h1 onClick={() => handleMenuToggle()} className="menu-btn">
+        <h1 onClick={handleMenuToggle} className="menu-btn">
           Menu
         </h1>
       </div>
 
       <div className={` ${toggleMenu ? "small-menu-container" : "hidden"}`}>
-        <div onClick={() => handleMenuToggle()} className="close-menu">
+        <div onClick={handleMenuToggle} className="close-menu">
           <span data-aos="zoom-in">
             <RxCross2 />
           </span>
@@ -40,28 +38,42 @@ export default function NavbarSmall() {
         <div className="menu-links">
           <div className="bold-links">
             <div>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={handleMenuToggle}>
+                Home
+              </Link>
             </div>
             <div>
-              <Link to="/products">Products</Link>
+              <Link to="/products" onClick={handleMenuToggle}>
+                Products
+              </Link>
             </div>
             <div>
-              <Link to="/">FAQ</Link>
+              <Link to="/" onClick={handleMenuToggle}>
+                FAQ
+              </Link>
             </div>
             <div>
-              <Link to="/">History</Link>
+              <Link to="/" onClick={handleMenuToggle}>
+                History
+              </Link>
             </div>
           </div>
 
           <div className="normal-links">
             <div>
-              <a href="/">Legal Notice</a>
+              <a href="/" onClick={handleMenuToggle}>
+                Legal Notice
+              </a>
             </div>
             <div>
-              <a href="/">Contact Us</a>
+              <a href="/" onClick={handleMenuToggle}>
+                Contact Us
+              </a>
             </div>
             <div>
-              <a href="/">Countries</a>
+              <a href="/" onClick={handleMenuToggle}>
+                Countries
+              </a>
             </div>
           </div>
         </div>
