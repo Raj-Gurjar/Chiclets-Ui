@@ -3,7 +3,7 @@ import YellowBtn from "../UI/Buttons/YellowBtn";
 import "./ProductCard.scss";
 import { Link } from "react-router-dom";
 
-export default function ProductCard1({ data }) {
+export default function ProductCard3({ data }) {
   return (
     <div className="product-card-container">
       <div className="product-img-container">
@@ -11,11 +11,11 @@ export default function ProductCard1({ data }) {
       </div>
 
       <div className="product-title">
-        <h2 className="capitalize">{data?.name}</h2>
+        <h2 className="uppercase">{data?.name}</h2>
       </div>
       <div>
-        <Link to={`/products/${data?.id}`}>
-          <YellowBtn btn_text={"buy now"} />
+        <Link to={`/product-details/${data.id}`} state={{ product: data }}>
+          <YellowBtn btn_text={"view product"} />
         </Link>
       </div>
     </div>

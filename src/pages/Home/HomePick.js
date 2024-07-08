@@ -13,7 +13,7 @@ const HomePick = () => (
       {ProductData?.slice(0, 3)?.map((product) => (
         <div key={product?.id}>
           <div>
-            <ProductCard1 data={product} btn_name={"Buy Now"} />
+            <ProductCard1 data={product} />
           </div>
         </div>
       ))}

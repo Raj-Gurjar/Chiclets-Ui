@@ -18,10 +18,8 @@ export default function Footer({ pt = "50px" }) {
   const OtherLinks = FooterData?.OtherLinks;
 
   return (
-    <div
-      className={`footer-container `}
-      style={{ paddingTop: pt }}
-    >
+    <div className={`footer-container `} style={{ paddingTop: pt }}>
+      {/* <div className="max-w-[1280px] "> */}
       <div className="footer-col-container">
         <div className="footer-col">
           <h2>NEWEST PRODUCTS</h2>
@@ -120,6 +118,7 @@ export default function Footer({ pt = "50px" }) {
         <div className="copyright-container">
           <h4>© Perfetti Van Melle Benelux, B.V. 2024</h4>
         </div>
+        {/* </div> */}
       </div>
     </div>
   );

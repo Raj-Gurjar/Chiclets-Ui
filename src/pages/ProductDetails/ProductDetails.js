@@ -20,8 +20,18 @@ export default function ProductDetails({ setbg }) {
   const [currentProductId, setCurrentProductId] = useState(initialProductId);
 
   useEffect(() => {
-    setbg(productData[currentIndex].colorBg || "transparent");
-  }, []);
+    const product = productData.find(
+      (product) => product.id === currentProductId
+    );
+    setbg(product?.colorBg || "transparent");
+  }, [currentProductId, setbg]);
+
+  useEffect(() => {
+    const product = productData.find(
+      (product) => product.id === initialProductId
+    );
+    setCurrentProductId(product.id);
+  }, [initialProductId]);
 
   //!------ Carousel Logic
   const currentIndex = productData.findIndex(
@@ -56,6 +66,10 @@ export default function ProductDetails({ setbg }) {
   const currentProduct = productData.find(
     (product) => product.id === currentProductId
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentProductId]);
 
   //!-------- Recommendations Logic
   const getRecommendations = (excludeProductId) => {

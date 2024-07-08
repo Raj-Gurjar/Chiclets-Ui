@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard1 from "../../components/Cards/ProductCard1";
+import ProductCard3 from "../../components/Cards/ProductCard3";
 import { Link } from "react-router-dom";
 // import ProductData from "../../Data/ProductsData.json";
 
@@ -12,7 +12,7 @@ export default function Recommendations({ productData }) {
         {productData?.map((product) => (
           <div key={product?.id}>
             <div>
-              <ProductCard1 data={product} />
+              <ProductCard3 data={product} />
             </div>
           </div>
         ))}
