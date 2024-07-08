@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Recommendations({ productData }) {
   return (
-    <div className="homePick-2-container">
+    <div className="recommendation-container homePick-2-container ">
       <h1>You might also like</h1>
 
       <div className="homePick-product-cards">
